@@ -3,6 +3,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
   font-size: 16px;
   font-family: "Fira Sans", "Noto Sans", "Arimo", "Gudea", "Overpass", "Ubuntu", "Oxygen", "Inter", "Roboto", sans-serif;
@@ -10,12 +12,16 @@ body {
   padding: 0;
 }
 
+.main-content {
+  flex: 1 0 auto;
+}
+
 a {
   color: black;
 }
 
 h3 {
-  color: #ddd;
+  color: black;
 }
 
 /* Style the header */
@@ -29,7 +35,7 @@ h3 {
 .topnav {
   overflow: hidden;
   background-color: #333;
-  padding-left: 42%;
+  padding-left: 40%;
   padding-right: 35%;
 }
 
@@ -130,4 +136,13 @@ h3 {
 .fa-envelope {
 
   color: black;
+}
+
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
