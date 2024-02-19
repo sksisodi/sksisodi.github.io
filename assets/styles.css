@@ -12,6 +12,25 @@ body {
   padding: 0;
 }
 
+.portfolio {
+  background-color: #F9D19B; /* Peach color background */
+  padding: 20px;
+  height: 100%;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.grid-item {
+  background-color: #333; /* Dark gray color */
+  height: 100px;
+  border-radius: 5px;
+}
+
 .main-content {
   flex: 1 0 auto;
 }
