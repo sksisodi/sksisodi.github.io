@@ -12,25 +12,30 @@ body {
   padding: 0;
 }
 
-.portfolio {
-  background-color: #F9D19B; /* Peach color background */
-  padding: 20px;
-  height: 100%;
+.equidistant-image {
+  display: inline-block; /* Align images in a line */
+  margin: 0 10px; /* Equidistant spacing on the left and right */
+  border: 5px solid black; /* Solid white border with 2px thickness */
+  box-sizing: border-box; /* Include the border in the width calculation */
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 20px;
+/* Optional: to ensure the image fits within the class container and maintains aspect ratio */
+.equidistant-image img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
 }
-
-.grid-item {
-  background-color: #333; /* Dark gray color */
-  height: 100px;
-  border-radius: 5px;
+.image-row {
+  display: flex; /* Use flexbox to lay out the child elements in a row */
+  justify-content: space-around; /* Space out the images evenly */
+  align-items: center; /* Align images vertically in the center */
+  margin: 25px 0px;
 }
-
+.image-style{
+  background-color:  #E6E6E6;
+  width: 27%;
+  height: 200 px;
+}
 .main-content {
   flex: 1 0 auto;
 }
