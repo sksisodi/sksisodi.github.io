@@ -33,9 +33,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </a>
   <div class="w3-bar-block w3-center">
     <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
   </div>
 </nav>
 
@@ -154,7 +154,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
     <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
     <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none;"></a> <br>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <p class="w3-medium"> Last updated: <span id="last-updated"></span></p>
   <!-- End footer -->
   </footer>
   
@@ -171,6 +171,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
+document.addEventListener("DOMContentLoaded", function(event) { 
+    document.getElementById('last-updated').textContent = document.lastModified;
+  });
 </script>
 
 </body>
