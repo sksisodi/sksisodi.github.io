@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body { background-color: #FDEEE6 ; color: black;}
+h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif; color: black;}
+p {color: black;}
 .w3-row-padding img {margin-bottom: 12px}
 .bgimg {
   background-position: center;
@@ -16,6 +18,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-size: cover;
   background-image: url('assets/images/IMG_2147.JPG');
   min-height: 100%;
+}
+.portfolio_cards {
+  border-radius: 25px;
+  width: 80%;
 }
 </style>
 </head>
@@ -63,26 +69,34 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Portfolio Section -->
   <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
+    <h2 class="w3-text-black">My Portfolio</h2>
     <hr class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <p><img src="assets/images/shibu.png" style="width:100%;"> The Alchemist </p>
-        <p><img src="assets/images/Resilience.jpeg" style="width:100%; "> Resilience </p>
-        <p><img src="assets/images/thinkbeforeyoupost.jpg" style="width:100% ; "> Think Before You Speak</p>
-        <p><img src="assets/images/shibu.png" style="width:100%; "> Dr. Frankenstein</p>
-        <p><img src="assets/images/shibu.png" style="width:100%; "> Concierge Game</p>
+      <div class="w3-third">
+        <p><img src="assets/images/shibu.png" class="portfolio_cards"> <br> The Alchemist </p>
+        <p><img src="assets/images/Resilience.jpeg" class="portfolio_cards"> Resilience </p>
+        <p><img src="assets/images/thinkbeforeyoupost.jpg" class="portfolio_cards"> Think Before You Speak</p>
+        <p><img src="assets/images/shibu.png" class="portfolio_cards"> Dr. Frankenstein</p>
+        <p><img src="assets/images/shibu.png" class="portfolio_cards"> Concierge Game</p>
       </div>
 
-      <div class="w3-half">
-        <p><img src="assets/images/shibu.png" style="width:100%; "> Data Vis </p>
-        <p><img src="assets/images/shibu.png" style="width:100%; "> Shibu </p>
-        <p><img src="assets/images/lost_treasure.png" style="width:100%; "> Lost Treasure</p>
-        <p><img src="assets/images/Dontshoot.png" style="width:100%; "> Don't Shoot</p>
-        <p><img src="assets/images/lost_treasure.png" style="width:100%; "> Story Streamer</p>
-        <p><img src="assets/images/Dontshoot.png" style="width:100%; "> Study Crafter</p>
+      <div class="w3-third">
+        <p><img src="assets/images/shibu.png" class="portfolio_cards"> Data Vis </p>
+        <p><img src="assets/images/shibu.png" class="portfolio_cards"> Shibu </p>
+        <p><img src="assets/images/lost_treasure.png"class="portfolio_cards"> Lost Treasure</p>
+        <p><img src="assets/images/Dontshoot.png" class="portfolio_cards"> Don't Shoot</p>
+        <p><img src="assets/images/lost_treasure.png" class="portfolio_cards"> Story Streamer</p>
+        <p><img src="assets/images/Dontshoot.png" class="portfolio_cards"> Study Crafter</p>
+      </div>
+      <div class="w3-third">
+        <p><img src="assets/images/shibu.png" class="portfolio_cards"> Data Vis </p>
+        <p><img src="assets/images/shibu.png" class="portfolio_cards"> Shibu </p>
+        <p><img src="assets/images/lost_treasure.png" class="portfolio_cards"> Lost Treasure</p>
+        <p><img src="assets/images/Dontshoot.png" class="portfolio_cards"> Don't Shoot</p>
+        <p><img src="assets/images/lost_treasure.png" class="portfolio_cards"> Story Streamer</p>
+        <p><img src="assets/images/Dontshoot.png" class="portfolio_cards"> Study Crafter</p>
       </div>
     <!-- End photo grid -->
     </div>
@@ -90,24 +104,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
   
-
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact Me</h2>
-    <hr class="w3-opacity">
-
-    <div class="w3-section">
-      <p>Lets get in touch.</p>
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>  UCSC Silicon Valley Extension<br>
-        &emsp; &emsp;&emsp; &emsp; 3175 Bowers Ave<br>
-         &emsp; &emsp;&emsp;  &emsp;    Santa Clara<br>
-         &emsp; &emsp;&emsp;   &emsp;   CA 95054</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sksisodi@ucsc.com</p>
-    </div>
-  </div>  
-  
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <footer class="w3-container w3-padding-64 w3-grey w3-center w3-xlarge" style="margin:-24px">
     <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
     <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
     <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
