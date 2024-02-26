@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TheAlchemist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body { background-color: #FDEEE6 ; color: black;}
+h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif; color: black;}
+p {color: black;}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('assets/images/alchemist_stone.jpg');
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:30%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:30%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:0px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Shweta K. Sisodiya</b></h1>
+    <p>Computational Media Phd Student</p>
+    <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none;"></a> <br>
+    <img src="assets/images/profile_pic.JPG" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="assets/images/alchemist_stone.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="700" height="700">
+    
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>The Alchemist</h2>
+    <hr class="w3-opacity">
+    <p>Status : On-going </p>
+    <p> Team : Shweta K. Sisodiya, Yi Xie and Angle Tan</p>
+    <P> Principal Investigator: Elin Carstensdottir </P>
+    <p>The primary aim of this research is to enhance the academic understanding and practical application of narrative-driven games. It seeks to explore the deep interconnection between <a href="https://dl.acm.org/doi/abs/10.1145/3337722.3337730?casa_token=hC8iincf8CkAAAAA:gZ5FIMNFH9hZdcKkA_onfBsfFq-iyoV7mGSj1zcmQfH5_MobVdg943AhZ5bHd0CvldzSZCVvu8Eh" >story progression mechanics</a>,
+        and player experience. This knowledge can guide the design of more engaging, meaningful, and immersive interactive storytelling experiences.</p>
+    <p> This research intends to:
+        <ol style="color: black;">
+        <li>Examine how different progression mechanics, such as 'Progression through Choice Selection' and 'Progression through Choice Selection' impact player engagement.</li>
+        <li>Analyze the effect of these progression mechanics on interaction patterns within narrative-driven games.</li>
+        <li>Understand how progression mechanics influence players' perception and interpretation of the narrative plot.</li></ol></p>
+    
+    <p>To achieve the above objectives, the study will employ a mixed-methods approach that includes:
+       <ol style="color: black;">
+        <li>Visual analytics to quantify and analyze player interaction patterns.</li>
+        <li>Player experience research to qualitatively understand the effects of progression mechanics.</li>
+        <li>Development of visualization tools to illustrate the findings and support game design decisions.</li></ol>  </p>
+    <!-- <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div><br> -->
+
+    <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+    <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">3</span><br>
+            Publications
+        </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2</span><br>
+        Current Projects
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3</span><br>
+        Completed Projects
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">8</span><br>
+        Collaborations
+      </div>
+    </div> -->
+
+    <button class="w3-button w3-grey w3-padding-large w3-section">
+     <span style="color: white"><a href="portfolio.html" style="text-decoration: none;">Portfolio</a></span>
+    </button>
+    <button class="w3-button w3-grey w3-padding-large w3-section">
+      <span style="color: white"> Games
+      </button>
+    <button class="w3-button w3-grey w3-padding-large w3-section">
+      <span style="color: white">Publications
+      </button>
+      <button class="w3-button w3-padding-large w3-section w3-gray" >
+        <span style="color: white"><i class="fa fa-download"></i>  <a href="assets/pdf/Resume_CV.pdf" style="text-decoration: none;">Download Resume</a></span>
+      </button>
+
+  <!-- End About Section -->
+</div>
+<!-- Contact Section -->
+<div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Lets get in touch ! </h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>  UCSC Silicon Valley Extension<br>
+        &emsp; &emsp;&emsp; &emsp; 3175 Bowers Ave<br>
+         &emsp; &emsp;&emsp;  &emsp;    Santa Clara<br>
+         &emsp; &emsp;&emsp;   &emsp;   CA 95054</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sksisodi@ucsc.com</p>
+    </div>
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-grey w3-large w3-center" style="margin:-24px">
+    <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
+    <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none;"></a> <br>
+    <p class="w3-medium"> Last updated: <span id="last-updated"></span></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+document.addEventListener("DOMContentLoaded", function(event) { 
+    document.getElementById('last-updated').textContent = document.lastModified;
+  });
+</script>
+
+</body>
+</html>
