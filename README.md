@@ -1,5 +1,1 @@
-Shweta is a third-year Computational Media Ph.D. student at the University of California, Santa Cruz where she blends her rich background in Applied Mathematics from the prestigious Indian Institute of Technology Roorkee with cutting-edge research. Before diving into academia, Shweta sharpened her analytical prowess as a Data Science Analyst at Accenture, delving deep into the intricacies of complex datasets.
-
-Shweta’s academic journey is centered around the intriguing interplay between players and games within interactive narrative environments. She is currently immersed in several projects, each focused on crafting and dissecting interactive narrative experiences. Shweta’s flair for visual storytelling drives her to create immersive visualizations that transform data into captivating visual narratives. Shweta’s career path reflects her adaptability, having fluidly navigated roles from data analyst to project lead, to programmer, and qualitative coder.
-
-To get a glimpse of the breadth and depth of her work, please take a look at her portfolio or Github. There, you'll find a showcase of the diverse projects that have shaped her professional and academic voyage. To get in touch with Shweta, feel free to message her on LinkedIn, Twitter, Instagram or reach out to her via email.
+This is my personal webpage
