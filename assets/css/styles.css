@@ -1,172 +1,102 @@
-* {
-  box-sizing: border-box;
+body { background-color:  #f1faee; color: black;}
+h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif; color: black;}
+p {color: black;}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('assets/images/IMG_2147.JPG');
+  min-height: 100%;
 }
-
-body {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.5;
-  font-size: 16px;
-  font-family: "Fira Sans", "Noto Sans", "Arimo", "Gudea", "Overpass", "Ubuntu", "Oxygen", "Inter", "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.equidistant-image {
-  display: inline-block; /* Align images in a line */
-  margin: 0 10px; /* Equidistant spacing on the left and right */
-  border: 5px solid black; /* Solid white border with 2px thickness */
-  box-sizing: border-box; /* Include the border in the width calculation */
-}
-
-/* Optional: to ensure the image fits within the class container and maintains aspect ratio */
-.equidistant-image img {
+.portfolio_cards {
+  border-radius: 15px;
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove extra space below the image */
-}
-.image-row {
-  display: flex; /* Use flexbox to lay out the child elements in a row */
-  justify-content: space-around; /* Space out the images evenly */
-  align-items: center; /* Align images vertically in the center */
-  margin: 25px 0px;
-}
-.image-style{
-  background-color:  #E6E6E6;
-  width: 27%;
-  height: 200 px;
-}
-.main-content {
-  flex: 1 0 auto;
 }
 
-a {
-  color: black;
+.timeline {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
-h3 {
-  color: black;
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
 }
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
 }
 
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  padding-left: 40%;
-  padding-right: 35%;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px;
-  /* Should be removed. Only for demonstration */
-}
-
-/* Left and right column */
-.column.side {
-  width: 20%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 60%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width:600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.fa {
-  padding: 5px;
-  font-size: 40px;
+.container::after {
+  content: '';
+  position: absolute;
   width: 25px;
-  text-align: center;
-  text-decoration: none;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
 }
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.5;
+.left {
+  left: 0;
 }
 
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
-
-  color: black;
+.right {
+  left: 50%;
 }
 
-/* Twitter */
-.fa-twitter {
-
-  color: black;
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
 }
 
-/* linkedin */
-.fa-linkedin {
-
-  color: black;
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
 
-/* github */
-.fa-github {
-
-  color: black;
+.right::after {
+  left: -16px;
 }
 
-/* google scholar */
-.fa-graduation-cap {
-
-  color: black;
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
 }
 
-/* Email */
-.fa-envelope {
-
-  color: black;
-}
-
-
-.footer {
-  flex-shrink: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  padding: 10px;
-  text-align: center;
+.w3-red, .w3-hover-red:hover {
+  color: #fff!important;
+  background-color: #f44336!important;
 }
