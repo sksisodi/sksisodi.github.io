@@ -11,9 +11,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <style>
-body { background-color:  #f1faee; color: black;}
+body { background-color: white;}
 h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif; font-weight: 900;color: black !important;}
-p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 500 !important; }
+p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 600 !important; }
 .w3-row-padding img {margin-bottom: 12px}
 .bgimg {
   background-position: center;
@@ -34,6 +34,11 @@ p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 500 !import
     background-color: #457b9d; /* Light blue background on hover */
     color: #457b9d; /* Dark blue text on hover */
 }
+.w3-custom-border {
+    border-radius: 20px;
+    border-width: 20cm;
+    border-color: #1d3557 !important; /* Your chosen color */
+  }
 
 </style>
 </head>
@@ -41,7 +46,7 @@ p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 500 !import
 
 <!-- Navbar -->
 <div class="w3-top">
-    <div class="w3-bar w3-card" style="background-color: #f1faee;">
+    <div class="w3-bar w3-card" style="background-color: white;">
       <a class="w3-bar-item w3-button w3-padding-xlarge w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"> </i> </a>
       <span class="w3-padding-large w3-hide-small w3-left w3-large"><b style="color: black;">Shweta</b><b style="color: #E63946;">Sisodiya</b></span>
       <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large ">Contact</a>
@@ -68,46 +73,43 @@ p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 500 !import
   <!-- Description -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32 w3-margin-top" id="">
     <div class="w3-margin-bottom w3-row-padding">
-    <h2 style="color: black;"> Project </h2><h2 style="color: #457b9d;"> Name</h2> <p> project status</p>
+    <h2><b><span style="color: black;">Proj</span><span style="color:#457b9d">ect</span></h2></b> <p> project status</p>
     <hr class="w3-opacity">
 
     <div class="w3-twothird"> <p>Another popular medium for portfolios is a digital PDF or slide deck, which acts as a presentation of your projects. When creating a digital portfolio, keep a master PDF or slide deck with all of your projects included so you can hide projects depending on the job you’re applying for or the skills you want to highlight.
     </p></div>
     <div class="w3-third"> <!-- This is the main container for the column layout -->
-        <div class="w3-col w3-border w3-center w3-border-blue-grey w3-padding" style="width:100%;margin-bottom:5px;">
-          <span class="w3-medium w3-text-black">Contributions</span><br>
-          <!-- Additional content can go here -->
+        <div class="w3-col w3-center w3-padding" style="width:100%;margin-bottom:5px; background-color: #f1faee; color: #1d3557;">
+          <span class="w3-medium">My Contributions</span><br>
+          
         </div>
-        <div class="w3-col w3-border w3-center w3-border-blue-grey w3-padding-small" style="width:100%; margin-bottom:5px;">
-          <span class="w3-medium w3-text-black">My Role</span><br>
-          Projects Lead Narrative Designer Study Designer
-          <!-- Additional content can go here -->
+        <div class="w3-col w3-center w3-padding-small" style="width:100%; margin-bottom:5px; background-color: #f1faee; color: #1d3557;">
+          <span class="w3-medium">My Role</span><br>
+          Projects Lead <br>Narrative Designer <br>Study Designer
         </div>
-        <div class="w3-col w3-border w3-center w3-border-blue-grey w3-padding-small" style="width:100%; margin-bottom:5px;">
-          <span class="w3-medium w3-text-black">Tools Used</span><br>
+        <div class="w3-col w3-center w3-padding-small" style="width:100%; margin-bottom:5px; border-radius: 10px; background-color: #f1faee;">
+          <span class="w3-medium">Tools Used</span><br>
           Happy Clients
-          <!-- Additional content can go here -->
         </div>
-        <div class="w3-col w3-border w3-center w3-border-blue-grey w3-padding-small" style="width:100%;margin-bottom:5px;">
-          <span class="w3-medium w3-text-black">Team</span><br>
+        <div class="w3-col w3-center w3-padding-small" style="width:100%;margin-bottom:5px; border-radius: 10px; background-color: #f1faee;">
+          <span class="w3-medium">Team</span><br>
           Meetings
-          <!-- Additional content can go here -->
         </div>
       </div>
       </div>
-      <div class="w3-content w3-justify w3-text-grey" id="pipeline">
-        <div class="w3-row w3-center w3-dark-grey w3-section">
+      <div class="w3-content w3-justify w3-text-indigo" id="pipeline">
+        <div class="w3-row w3-center w3-section">
           <div class="w3-quarter w3-section">
-            <a href="#"><span class="w3-large">overview</span><br></a>
+            <a href="#"><span class="w3-large w3-button">overview</span><br></a>
           </div>
           <div class="w3-quarter w3-section">
-            <a href="#problem"><span class="w3-large">problem</span><br></a> 
+            <a href="#problem"><span class="w3-button w3-large">problem</span><br></a> 
           </div>
           <div class="w3-quarter w3-section">
-            <a href="#solution"><span class="w3-large">solution</span><br></a> 
+            <a href="#solution"><span class="w3-large w3-button">solution</span><br></a> 
           </div>
           <div class="w3-quarter w3-section">
-            <a href="#conclusion"><span class="w3-large">conclusion</span><br></a> 
+            <a href="#conclusion"><span class="w3-large w3-button">conclusion</span><br></a> 
           </div>
         </div>
       </div>
