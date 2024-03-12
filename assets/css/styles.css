@@ -1,6 +1,6 @@
-body { background-color:  #f1faee; color: black;}
-h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif; color: black;}
-p {color: black;}
+body { background-color: white;  font-family: 'Noto Serif', serif;}
+h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif;  font-weight: 600;color: black !important;}
+p {color: black; font-family: 'Poppins', sans-serif;  serif;; font-weight: 600;  }
 .w3-row-padding img {margin-bottom: 12px}
 .bgimg {
   background-position: center;
@@ -13,90 +13,44 @@ p {color: black;}
   border-radius: 15px;
   width: 100%;
 }
-
-.timeline {
-  position: relative;
-  max-width: 200px;
-  margin: 0 auto;
+.w3-bar.w3-card {
+    box-shadow: none !important;
+    color: #457b9d;
+  }
+.w3-bar .w3-bar-item:hover {
+    background-color: #457b9d; /* Light blue background on hover */
+    color: #457b9d; /* Dark blue text on hover */
 }
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: black;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+.w3-custom-border {
+    border-radius: 20px;
+    border-width: 20cm;
+    border-color: #1d3557 !important; /* Your chosen color */
+  }
+  .custom-name::after {
+  content: 'Sisodiya';
+  color: #E63946; /* Your chosen color */
 }
-
-.container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+.w3-image-container {
+  width: 100%;
+  margin-bottom: 0px; /* Adjusted for consistency with your request */
+  color: #1d3557; /* This color setting affects the text color inside the container */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensures the border radius applies to the image as well */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); /* Shadow effect for 3D appearance */
 }
-
-.container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+.w3-image-container2 {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px; /* Adjusted for consistency with your request */
+  color: #1d3557; /* This color setting affects the text color inside the container */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensures the border radius applies to the image as well */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); /* Shadow effect for 3D appearance */
 }
-
-.left {
-  left: 0;
-}
-
-.right {
-  left: 50%;
-}
-
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-.right::after {
-  left: -16px;
-}
-
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-.w3-red, .w3-hover-red:hover {
-  color: #fff!important;
-  background-color: #f44336!important;
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures the image fits nicely within the container */
+  object-fit: cover; /* Adjusts the image size to cover the container, might crop the image */
+  /* Removed the border-radius here, applied to the container instead for a consistent look */
 }

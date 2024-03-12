@@ -1,186 +1,138 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>sksisodi's portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<style>
-body { background-color: #f1faee; color: black;}
-h1,h2,h3,h4,h5,h6 {font-family: Poppins, sans-serif; color: black;}
-p {color: black;}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('assets/images/IMG_2147.JPG');
-  min-height: 100%;
-}
-</style>
-</head>
-<body>
-
-<!-- Sidebar with image -->
-<!-- <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav> -->
-
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
-
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" > <!-- style="margin-left:30%" -->
-
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container" style="padding:0px 16px" id="home">
-    <p>Shweta</p>
-    <!-- <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none;"></a> <br> -->
-    <!-- <img src="assets/images/profile_pic.JPG" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="assets/images/profile_pic.JPG" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333"> -->
+ <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Shweta Sisodiya</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href = "assets/css/styles.css">
+  </head>
+  <body>
+  
+  <!-- Navbar -->
+  <div class="w3-top">
+      <div class="w3-bar w3-card" style="background-color: white;">
+        <a class="w3-bar-item w3-button w3-padding-xlarge w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"> </i> </a>
+        <span class="w3-padding-large w3-hide-small w3-left w3-large custom-name" style="font-weight: 600;">Shweta</span>
+        <a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large " style="font-weight: 600;">Contact</a>
+        <a href="assets/pdf/Resume_CV.pdf" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large " style="font-weight: 600;">Resume</a>
+        <a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large" style="font-weight: 600;">Games</a>
+        <a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large" style="font-weight: 600;">Portfolio</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-right w3-large" style="font-weight: 600;">Home</a>
+      </div>
+    </div>
     
-  </header>
-
-   <!-- Portfolio Section -->
-   <div class="w3-content w3-row-padding" id="intro">
-    <div class="w3-half" >
-    <p class="w3-text-grey">Hi there! 👋 I'm Shweta.</p>
-    <hr class="w3-opacity">
-    <h2>Computational Media Phd Student at UCSC and research storytelling experiences.</h2>
-    <p>Say hello to me </p>
-    <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none;"></a> <br>
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">portfolio</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">games</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contanct</a>
     </div>
-    </div>
-
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    
-    <hr class="w3-opacity">
-    <!-- <p>
-        In a world of endless possibilities and digital adventures, you've stumbled upon a curious character: a third-year Computational Media Ph.D. student from the University of California, Santa Cruz. This person has a rich background in Applied Mathematics from the Indian Institute of Technology Roorkee and has journeyed through data landscapes as a Data Science Analyst at Accenture, mastering the secrets of complex data.<br><br>
+  
+    <!-- End of Navbar on -->
+  
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large w3-margin-top" >
+  
+    <!-- Header -->
+  
+    <!-- Description -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32 w3-margin-top" id="">
+      <div class="w3-margin-bottom w3-row-padding">
         
-        Their quest is to explore the mysteries of how players and games interact in stories where every choice matters. They are skilled in the magic of turning data into stunning visual stories, making numbers and facts come alive. This adventurer has worn many hats: from analyzing data to leading projects, coding, and even studying the stories games tell us.<br><br>
+        <div class="w3-twothird w3-margin-top">
+          <p class="w3-text-grey w3-large">Hi there! 👋 I'm Shweta. </p>
+          <p class="w3-xxlarge w3-text-black" style="text-align: left;"> a storyteller at heart and a computational media PhD student at UCSC, where I <span style="color: #457b9d;">design</span> and <span style="color: #457b9d;">research</span> storytelling experiences.</p>
         
-        Now, it's your turn to choose your adventure. Do you want to see the collection of works in the portfolio, where every project is a different realm to explore? Maybe you're interested in the writings and discoveries in publications, where knowledge is shared. There's also a world of games, where interactive stories await those brave enough to play. Or, if you're feeling adventurous, why not dive into the random treasures and mysteries this person has to offer?
-        
-        The journey is yours to decide. Which path will you take?
-    </p> -->
-    <!-- <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-    </div><br> -->
+        <p class="w3-text-grey w3-large">Say hello to me! </p>
+        <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none; color:#457b9d ;" ></a>
+        <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none; color:#E63946 "></a>
+        <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none; color:#1d3557"></a>
+        <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none;color:#a8dadc"></a>
+        <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none;color:#1d3557"></a> <br>
+        <hr class="w3-opacity">
 
-    <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-    <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">3</span><br>
-            Publications
+ </div>
+      <div class="w3-third w3-center w3-padding-64" style="margin-top: 16px;"> <!-- This is the main container for the column layout -->
+        <div class="w3-image-container">
+            <img src="assets/images/profile.jpg" alt="Descriptive text here" class="responsive-image" />
+          </div>
+          <div class="w3-row w3-center w3-margin-top">
+            <button class="w3-text-black" style="border-radius: 10cm; border-color:#1d3557; background-color: white;"><i class="fa fa-download"></i><a href="assets/pdf/Resume_CV.pdf" style="text-decoration: none;" class="w3-large"> Download Resume</a></button>
+          </div>
+          
+
         </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2</span><br>
-        Current Projects
+        </div>
+        <h2> Portfolio Coming Soon! Stay tune.</h2>
+        <img src="assets/images/portfolio.jpg" alt="Descriptive text here" class="responsive-image w3-image-container2" />
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">3</span><br>
-        Completed Projects
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">8</span><br>
-        Collaborations
-      </div>
+      
+    <!-- End About Section -->
+    <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <!-- <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>  UCSC Silicon Valley Extension<br>
+        &emsp; &emsp;&emsp; &emsp; 3175 Bowers Ave<br>
+         &emsp; &emsp;&emsp;  &emsp;    Santa Clara<br>
+         &emsp; &emsp;&emsp;   &emsp;   CA 95054</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sksisodi@ucsc.com</p>
     </div> -->
-
-    <button class="w3-button w3-grey w3-padding-large w3-section">
-     <span style="color: white"><a href="portfolio.html" style="text-decoration: none;">Portfolio</a></span>
-    </button>
-    <button class="w3-button w3-grey w3-padding-large w3-section">
-      <span style="color: white"> Games
-      </button>
-    <button class="w3-button w3-grey w3-padding-large w3-section">
-      <span style="color: white">Publications
-      </button>
-      <button class="w3-button w3-padding-large w3-section w3-gray" >
-        <span style="color: white"><i class="fa fa-download"></i>  <a href="assets/pdf/Resume_CV.pdf" style="text-decoration: none;">Download Resume</a></span>
-      </button>
-
-  <!-- End About Section -->
-</div>
-<!-- Contact Section -->
-<div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-  <h2>Lets get in touch!</h2>
-  <hr class="w3-opacity">
-
-  <div class="w3-section">
-
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>  UCSC Silicon Valley Extension<br>
-      &emsp; &emsp;&emsp; &emsp; 3175 Bowers Ave<br>
-       &emsp; &emsp;&emsp;  &emsp;    Santa Clara<br>
-       &emsp; &emsp;&emsp;   &emsp;   CA 95054</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sksisodi@ucsc.com</p>
+    </div>  
+  
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-large w3-center" style="margin:-24px; background-color: #f1faee;">
+      <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none; color:#457b9d ;"></a>
+      <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none; color:#E63946 "></a>
+      <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none; color:#1d3557"></a>
+      <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none; color:#a8dadc"></a>
+      <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none; color:#1d3557"></a> <br>
+      <p class="w3-medium"> Last updated: <span id="last-updated"></span></p>
+    <!-- End footer -->
+    </footer>
+    
+  <!-- END PAGE CONTENT -->
   </div>
-  </div>  
   
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-grey w3-large w3-center" style="margin:-24px">
-    <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
-    <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none;"></a> <br>
-    <p class="w3-medium"> Last updated: <span id="last-updated"></span></p>
-  <!-- End footer -->
-  </footer>
+  <script>
+  // Open and close sidebar
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "40%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
   
-<!-- END PAGE CONTENT -->
-</div>
-
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-document.addEventListener("DOMContentLoaded", function(event) { 
-    document.getElementById('last-updated').textContent = document.lastModified;
-  });
-</script>
-
-</body>
-</html>
+  function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  document.addEventListener("DOMContentLoaded", function(event) { 
+      document.getElementById('last-updated').textContent = document.lastModified;
+    });
+  
+    function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  var modal = document.getElementById('ticketModal');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+  
+  </body>
+  </html

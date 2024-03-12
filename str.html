@@ -9,11 +9,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<style>
-body { background-color: white;}
-h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif; font-weight: 900;color: black !important;}
-p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 600 !important; }
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href = "assets/css/styles.css">
+<!-- <style>
+body { background-color: white;  font-family: "Bevan", serif;}
+h1,h2,h3,h4,h5,h6 { font-family: "Bevan", serif; font-weight: 400;color: black !important;}
+p {color: black; font-family: "Roboto Slab", serif;; font-weight: 600;  }
 .w3-row-padding img {margin-bottom: 12px}
 .bgimg {
   background-position: center;
@@ -39,8 +41,12 @@ p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 600 !import
     border-width: 20cm;
     border-color: #1d3557 !important; /* Your chosen color */
   }
+  .custom-name::after {
+  content: 'Sisodiya';
+  color: #E63946; /* Your chosen color */
+}
 
-</style>
+</style> -->
 </head>
 <body>
 
@@ -48,7 +54,7 @@ p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 600 !import
 <div class="w3-top">
     <div class="w3-bar w3-card" style="background-color: white;">
       <a class="w3-bar-item w3-button w3-padding-xlarge w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"> </i> </a>
-      <span class="w3-padding-large w3-hide-small w3-left w3-large"><b style="color: black;">Shweta</b><b style="color: #E63946;">Sisodiya</b></span>
+      <span class="w3-padding-large w3-hide-small w3-left w3-large custom-name"> Shweta</span>
       <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large ">Contact</a>
       <a href="games.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large">Games</a>
       <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large">Portfolio</a>
@@ -138,10 +144,24 @@ p {color: black; font-family: 'Montserrat', sans-serif; font-weight: 600 !import
   <!-- End About Section -->
   </div>
 
+  <!-- Contact Section -->
+<div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+  <h2>Lets get in touch!</h2>
+  <hr class="w3-opacity">
+
+  <div class="w3-section">
+
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>  UCSC Silicon Valley Extension<br>
+      &emsp; &emsp;&emsp; &emsp; 3175 Bowers Ave<br>
+       &emsp; &emsp;&emsp;  &emsp;    Santa Clara<br>
+       &emsp; &emsp;&emsp;   &emsp;   CA 95054</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sksisodi@ucsc.com</p>
+  </div>
+  </div>  
 
   
   <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-center w3-large" style="margin:-24px">
+  <footer class="w3-container w3-padding-64 w3-grey w3-large w3-center" style="margin:-24px">
     <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
     <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
     <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none;"></a>
