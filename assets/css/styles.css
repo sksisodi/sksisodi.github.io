@@ -1,7 +1,7 @@
 body { background-color: white;  font-family: 'Noto Serif', serif;}
-h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif;  font-weight: 600;color: black !important;}
-p {color: black; font-family: 'Poppins', sans-serif;  serif;; font-weight: 600;  }
-.w3-row-padding img {margin-bottom: 12px}
+h1,h2,h3,h4,h5,h6 { font-family: 'Poppins', sans-serif;  font-weight: 600; color: black !important;}
+p {color: black; font-family: 'Poppins', sans-serif; font-weight: 400;  }
+
 .bgimg {
   background-position: center;
   background-repeat: no-repeat;
@@ -32,15 +32,18 @@ p {color: black; font-family: 'Poppins', sans-serif;  serif;; font-weight: 600; 
 }
 .w3-image-container {
   width: 100%;
+  /* height: 300px; */
   margin-bottom: 0px; /* Adjusted for consistency with your request */
-  color: #1d3557; /* This color setting affects the text color inside the container */
   border-radius: 15px; /* Rounded corners */
   overflow: hidden; /* Ensures the border radius applies to the image as well */
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6); /* Shadow effect for 3D appearance */
+  background-image: url('assets/images/portfolio.jpg'); /* Replace with your image URL */
+  background-size: cover; /* This will cover the entire container */
+  background-position: center; /* This will center the background image */
 }
 .w3-image-container2 {
   width: 100%;
-  height: 200px;
+  height: 150px;
   margin-bottom: 5px; /* Adjusted for consistency with your request */
   color: #1d3557; /* This color setting affects the text color inside the container */
   border-radius: 15px; /* Rounded corners */
