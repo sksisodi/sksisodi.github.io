@@ -1,6 +1,6 @@
 body { background-color: white;  font-family: 'Noto Serif', serif;}
-h1,h2,h3,h4,h5,h6 { font-family: 'Noto Serif', serif;  font-weight: 600; color: black !important;}
-p {color: black; font-family: 'Poppins', sans-serif; font-weight: 400;  }
+h1,h2,h3,h4,h5,h6 { font-family: 'Noto Serif', serif;  font-weight: 700; color: black !important;}
+p {color: rgb(0, 0, 0); font-family: 'Noto Serif', sans-serif; font-weight: 500;  }
 a {text-decoration: none;}
 .bgimg {
   background-position: center;
@@ -46,10 +46,17 @@ a {text-decoration: none;}
   height: 220px;
   border-radius: 15px; /* Rounded corners */
 }
+.responsive-image2 {
+  width: 90%;
+  height: auto;
+  display: block; /* Ensures the image fits nicely within the container */
+  object-fit: cover; /* Adjusts the image size to cover the container, might crop the image */
+  align-items: center;
+}
 .responsive-image {
   width: 100%;
   height: auto;
   display: block; /* Ensures the image fits nicely within the container */
   object-fit: cover; /* Adjusts the image size to cover the container, might crop the image */
-  /* Removed the border-radius here, applied to the container instead for a consistent look */
+  align-items: center;
 }
