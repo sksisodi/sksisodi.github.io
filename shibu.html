@@ -1,205 +1,362 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-  <title>Shweta Sisodiya</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href = "assets/css/styles.css">
-  </head>
-  <body>
-  
-  <!-- Navbar -->
-  <div class="w3-top">
-      <div class="w3-bar w3-card" style="background-color: white;">
-        <a class="w3-bar-item w3-button w3-padding-xlarge w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"> </i> </a>
-        <span class="w3-padding-large w3-hide-small w3-left w3-large custom-name" style="font-weight: 600;">Shweta</span>
-        <a href="" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large " style="font-weight: 600;">Contact</a>
-        <a href="assets/pdf/Resume_CV.pdf" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large " style="font-weight: 600;">Resume</a>
-        <a href="publication" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large" style="font-weight: 600;">Publications</a>
-        <a href="experience" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-right w3-large" style="font-weight: 600;">Experience</a>
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-right w3-large" style="font-weight: 600;">Home</a>
-      </div>
-    </div>
-    
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-      <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">portfolio</a>
-      <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">games</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">contanct</a>
-    </div>
-  
-    <!-- End of Navbar on -->
-  
-  <!-- Page Content -->
-  <div class="w3-main w3-padding-large w3-margin-top" >
-  
-    <!-- Header -->
-  
-    <!-- Description -->
-    <div class="w3-content w3-justify w3-padding-32 w3-margin-top" id="">
-      <div class="w3-margin-bottom w3-row-padding">
-        
-        <div class="w3-twothird w3-margin-top">
-          <br><br>
-          <p class="w3-xxlarge w3-text-black" style="text-align: left; margin: -5px -5px 0px 0px; font-weight: 900">Shi<span style="color: #457b9d;">bu</span></p>
-          <p class="w3-text-grey w3-medium"> Status: In-progress </p>
-        <p style="font-size: medium;" class="w3-margin-right">Non-native English speakers often face significant challenges in adopting gender-inclusive language (GIL), with nuances in pronoun use such as 'they' versus 'he/she' presenting particular difficulties. The intricacies of English pronouns can complicate their efforts to communicate inclusively, as they balance learning a new language with understanding and respecting gender identities.
-        </p>
-        <p> We also submited this work as part of workshop for CHI Hxb 2022</p>
-        <p>You refer to the following youtube video for more details </p><iframe width="360" height="215" src="https://www.youtube.com/embed/iPWHUlxY-Ng?si=x_hDeBMymPJQ0qH2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-        <hr class="w3-opacity">
-      </div>
-      <div class="w3-third w3-center w3-padding-64" style="margin-top: 16px;"> <!-- This is the main container for the column layout -->
-        <div class="w3-image-container">
-            <img src="assets/images/shibu_1.jpg" alt="Profile Image" class="responsive-image2 w3-center" />
-          </div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shweta-Sasodiya-Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="work.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="nav-bar">
+            <a class="link" href="index.html">
+                <div class="nav-left">
+                    <img src="./assets/icon.png" alt="logo" />
+                    <h1>Shweta</h1>
+                </div>
+            </a>
+
+            <img src="./assets/hamburger.png" alt="" class="ham-icon" />
+            <div class="nav-right-alt">
+                <div class="menu-bar-alt">
+                    <div class="btn-container-alt">
+                        <a href="index.html?section=about"><button>About</button></a>
+                        <a href="index.html?section=work"><button>Work</button></a>
+                        <a href="index.html?section=contact"><button>Contact</button></a>
+                        <a href="index.html?section=publications"><button>Publications</button></a>
+
+                    </div>
+                    <div class="link-container-alt">
+                        <ul>
+                            <li>
+                                <a href="twitter.html"><img src="./assets/twitter.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="linkedin.html"><img src="./assets/linkedin.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="github.html"><img src="./assets/github.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="scholar.html"><img src="./assets/scholar.png" alt="" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="btn-container">
+                    <a href="index.html?section=about"><button>About</button></a>
+                    <img src="./assets/star_white.png" alt="" class="star" />
+                    <a href="index.html?section=work"><button>Work</button></a>
+                    <img src="./assets/star_white.png" alt="" class="star" />
+                    <a href="index.html?section=publications"><button>Publications</button></a>
+                    <a href="index.html?section=contact"><button>Contact</button></a>
+
+                </div>
+                <div class="link-container">
+                    <ul>
+                        <li>
+                            <a href="twitter.html"><img src="./assets/twitter.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="linkedin.html"><img src="./assets/linkedin.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="github.html"><img src="./assets/github.png" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="scholar.html"><img src="./assets/scholar.png" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-        <p style="font-size: large; font-weight: 900"><span style="color: #457b9d;">Role</span> and <span style="color: #E63946;">Contributions</span></p>
-        <p>To contribute to the ongoing discourse on gender-inclusive language and challenges faced by non-native English speakers and ESL learners. I <span style="color: #E63946;">co-designed “Shibu”</span> a Role-Playing Game (RPG), with two other Ph.D. researchers. <br><br>
 
-          As the <span style="color: #E63946;">production lead</span> for "Shibu", my role was central to guiding the project's vision and execution. My responsibilities extended to crafting the game's narrative and organizing playtesting sessions to gauge and enhance user experience and educational impact. Collaborating closely with my team, we leveraged an iterative development process, heavily reliant on player feedback and playtesting, to refine gameplay and narrative. Leading the project, I prioritized tasks based on their impact on our educational objectives, ensuring our game remained engaging while fulfilling its instructional purpose.</p>
-        <!-- <img src="assets/images/portfolio.jpg" alt="Descriptive text here" class="responsive-image w3-image-container2" /> -->
-        <p style="font-size: large; font-weight: 900"><span style="color: #457b9d;">Time</span><span style="color: #E63946;">line</span></p>
-        <p>The project spanned approximately 5 months, during which we developed and tested two game prototypes, currently advancing with industry collaboration. The timeline brake down as follows: 
-          <ul style="color: black;">
-            <li> Initial research and ideation phase: 1.5 months </li>
-            <li> Game development: 2 months </li>
-            <li> Recruitment: 2 weeks </li>
-            <li> Conducting research: 2.5 weeks </li>
-            <li> Survey: 1 week </li>
-            <li> Analysis: 1.5 weeks </li>
-            <li> Report: 1 week</li>
-          </ul> 
-          </p>
-          <p style="font-size: large; font-weight: 900"><span style="color: #457b9d;">Research</span><span style="color: #E63946;">Goal</span></p>
-          <p>Our research sought to explore the effectiveness of using games as a medium to familiarize players with gender-inclusive pronouns and encourage their practice. This question emerged from a combination of previous research, and absence of any standarizd or formalize pedalogical resources. <br>
-          
-           The goals of the research project were as follows:
-           <ul style="color: black;">
-            <li>Investigate user perceptions and interactions with the platform, focusing on its narrative and gameplay mechanics.</li>
-            <li> Identify any visual or textual elements that may inadvertently misrepresent or offend individuals.</li>
-            <li> Assess whether players gain an understanding of gender-neutral pronouns through their experience with the game.</li>
-           </ul>
-          </p>
-          <p style="font-size: large; font-weight: 900;"><span style="color: #457b9d;">Research</span><span style="color: #E63946;">Methodology</span></p>
-          <p>For this study, I used a two step testing process on our two game prototypes to make sure they were welcoming and effective in teaching.
-            <ul style="color: black;">
-            <li> Phase 1 : Expert Evalutation Study </li>
-            <p style="text-indent: 10px;">I recruited five individuals who prefer to use gender-neutral pronouns. They played our game and were later interviewed (average time 15 min) to critique the game’s narrative, dialogues, and visuals. I chose this approach because it gives us in-depth feedback from individuals who really understand the issues we're trying to address. This helps us make sure our game is respectful, avoid misrepresentaion and implicity biases. <br>
-            
-            Based on their feedbakc,  my team and I made revision strategies. We updated the visualis to be more inclusive and changed the game from being puzzle-like to more like a chat. This was to make sure players could focus on learning about using gender-neutral pronouns without getting distracted by complexities of puzzles.<br><br></p> 
-            
-          <li> Phase 2: Interviews with Non-Native English Speaker</li>
-          <p>Once our second prototypes was ready, I recruited ten individuals whose were non-native english speaker, to see if they found the game interesting and if they could learn from it. All the 10 individuals were later on interviewed (average time : 20 min) to get their feebacks on how overall experience and acceptance of platforms. This step was important because interviweing our participants right after playing meant they could share fresh thoughts. Plus, by interviewing directly comapred to survey/scales, we were able ask for more details whenever their answers  seemed a bit unclear. </p>
-          </ul>
-          </p>
-          <p style="font-size: large; font-weight: 900;"><span style="color: #457b9d;">Recruitment</span><span style="color: #E63946;">Process</span></p>
-          <p>
-            For this study all participants were recruited by posting invitations links in community channels of discord. No compensation was provided to any participants. <br><br>
+        <main class="work-section">
+            <header class="work-header">
+                <div class="work-head">
+                    <img src="./assets/work-star.png" alt="" class="work-star" />
+                    Shibu
+                    <img src="./assets/work-star.png" alt="" class="work-star" />
+                </div>
+            </header>
+            <div class="section-star">
+                <img src="./assets/work-star-brown.png" alt="" />
+            </div>
 
-            For the phase 1 our recuirtment criteria was:
-            <ul style="color: black;">
-              <li> Age : All age group no restrictions </li>
-              <li> Geography: the US only </li>
-              <li> Language: English </li>
-              <li> Prefer ot use gender-netural pronouns </li>
-            </ul>
 
-            For the phase 2 our recuirtment criteria was:
-            <ul style="color: black;">
-              <li> Age : All age group no restrictions </li>
-              <li> Geography: the US only </li>
-              <li> Language:  Indiviual must have basic knwoledge of english but their mother toungues must not be English </li>
-            </ul>
-           
-          </p>
-          <p style="font-size: large; font-weight: 900;"><span style="color: #457b9d;">Analysis</span> and <span style="color: #E63946;">Synthesis</span></p>
-          <p>
-            After conducting the playtest, we (research team) engaged with participants through a 20-minute interview survey. This survey was designed to capture their reactions to the game and gather opinions on its potential to outdo traditional orientation methods. Questions also probed their thoughts on the use of pronouns within the game. Utilizing design tools, such as Figma, we systematically organized and analyzed these interview insights. This analysis helped identify areas for game improvement, particularly in design, storytelling, and functionality.<br><br>
-            From our analysis, several key findings emerged. 
-            <ul>
-              <li> First, there's a need for a more robust feedback mechanism to ensure players learn from their experiences, as our current system falls short in evaluating this. Interestingly, a significant portion of participants (4 out of 10) managed to avoid using any personal pronouns during play, indicating a need to refine our narrative approach. </li>
-              <li> Secondly, while most participants (7 out of 10) found the game engaging than conventional orientation sessions, our method for measuring their experience needs enhancement.</li>
-              <li> Lastly, Despite instructions on pronoun sensitivity, most players still defaulted to male pronouns for the Editor character in post-game interviews. This contrasted with their behavior towards Shibu, the protagonist, whom they addressed with neutral pronouns once they recognized a preference for them. However, this sensitivity did not extend to other non-player characters, who were often referred to with gender-specific pronouns. This feedback underscores the importance of revising our narrative and script to promote a more inclusive and educational player experience. </li>
-            </ul>
-          </p>
-          <p style="font-size: large; font-weight: 900;"><span style="color: #457b9d;">Self</span><span style="color: #E63946;">Reflection</span></p>
-          <p>
-            This project started more of as personal journey to underscore the ongoing discourse about the effectiveness of e
-          </p>
-          <p>
 
-          </p>
-        </div>
-      </div>
-    <!-- End About Section -->
-    <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <!-- <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>  UCSC Silicon Valley Extension<br>
-        &emsp; &emsp;&emsp; &emsp; 3175 Bowers Ave<br>
-         &emsp; &emsp;&emsp;  &emsp;    Santa Clara<br>
-         &emsp; &emsp;&emsp;   &emsp;   CA 95054</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sksisodi@ucsc.com</p>
-    </div> -->
-    </div>  
-  
-    
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-large w3-center" style="margin:-24px; ">
-      <a href="mailto:sksisodi@ucsc.edu" class="fa fa-envelope fa-lg" style="margin-right: 5px; text-decoration: none; color:#457b9d ;"></a>
-      <a href="https://twitter.com/ShwetaSisodiyaG" class="fa fa-twitter fa-lg" style="margin-right: 5px; text-decoration: none; color:#E63946 "></a>
-      <a href="https://www.linkedin.com/in/sisodiyashwetaiitr/" class="fa fa-linkedin fa-lg" style="margin-right: 5px; text-decoration: none; color:#1d3557"></a>
-      <a href="https://github.com/sksisodi?tab=overview&from=2024-01-01&to=2024-02-14" class="fa fa-github fa-lg" style="margin-right: 5px; text-decoration: none; color:#a8dadc"></a>
-      <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="fa fa-graduation-cap fa-lg" style="margin-right: 5px; text-decoration: none; color:#1d3557"></a> <br>
-      <p class="w3-medium"> Last updated: <span id="last-updated"></span></p>
-    <!-- End footer -->
-    </footer>
-    
-  <!-- END PAGE CONTENT -->
-  </div>
-  
-  <script>
-  // Open and close sidebar
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "40%";
-    document.getElementById("mySidebar").style.display = "block";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidebar").style.display = "none";
-  }
-  document.addEventListener("DOMContentLoaded", function(event) { 
-      document.getElementById('last-updated').textContent = document.lastModified;
-    });
-  
-    function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  var modal = document.getElementById('ticketModal');
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-  </script>
-  
-  </body>
-  </html
+            <div class="work-content">
+                <div class="side-bar">
+                    <ul>
+                        <li class="active" data-target="Brief">BRIEF</li>
+                        <li data-target="PS">PROBLEM STATEMENT</li>
+                        <li data-target="Solution">SOLUTION</li>
+                        <li data-target="Challenges">CHALLENGES</li>
+                        <li data-target="Impact">IMPACT</li>
+                        <li data-target="dd">DESIGN AND DEVELOPMENT</li>
+                        <li data-target="er">EVALUATIVE RESEARCH</li>
+                    </ul>
+                </div>
+                <div class="work-details">
+                    <div class="details-section shibu-head" id="Brief">
+                        <div>
+                        <h1>Brief</h1>
+                        <p>
+                            The contribution of this project is the development of Shibu, a role-playing game designed
+                            to promote and instill gender-inclusive language (GIL) by combining an engaging narrative
+                            with interactive gameplay aimed at raising awareness and addressing gender biases in
+                            communication.
+                        </p>
+                        <p>
+                            <b> Roles: </b> Project Lead and Lead Researcher <br>
+                            <b> Year: </b> 2023 <br>
+                            <b> Team: </b> 3 Researcher and 2 Faculty Mentor <br>
+                            <b> Tools: </b> Figma, Google Doc, Excel Sheet <br>
+                            <b> Programming Language: </b> Python <br>
+                        </p>
+                        </div>
+                        <img src="./assets/shibu.png" alt="" />
+                    </div>
+
+                    <div class="details-section" id="PS">
+                        <h1>Problem Statement</h1>
+                        <p>
+                            In today's increasingly diverse and inclusive environments, the use of gendered
+                            language,particularly personal pronouns, which can unintentionally perpetuate gender biases
+                            and exclude individuals who do not conform to traditional gender identities, is a matter of
+                            debate. Despite growing awareness around gender-inclusive language (GIL) through seminars,
+                            workshops, and formal education, many individuals still struggle to implement it
+                            consistently in everyday interactions. This inconsistency stems from a lack of
+                            understanding, internalized biases, and the absence of standardized approaches, making it
+                            difficult to foster more inclusive communication practices. This particularly becomes even
+                            more challenging for English as a Second language (ESL) speakers.
+                        </p>
+                    </div>
+
+                    <div class="details-section" id="Solution">
+                        <h1>Solution</h1>
+                        <p>
+                            This project primarily aims to research how we can promote GIL adoption by creating an
+                            interactive and engaging platform for users to practice and become familiar with inclusive
+                            pronoun usage. In this project, we designed and developed a role-playing game, Shibu. The
+                            game seeks to combine entertainment with education, offering an innovative, practical tool
+                            that encourages players to reflect on their language choices.
+                        </p>
+                    </div>
+
+                    <div class="details-section" id="Challenges">
+                        <h1>Challenges</h1>
+                        <p>
+                            One of the biggest challenges in developing this project is the complexity of language,
+                            which is often supplemented by context and cultural nuances. These nuances make it difficult
+                            to standardize language rules, particularly when addressing the fluidity of gender identity.
+                            To address this, the project team had to carefully consider how narratives and storytelling
+                            could be woven into the game to help users internalize GIL more naturally. By incorporating
+                            contextual scenarios that reflect real-life situations, the game can help players better
+                            understand how language shapes identity and how to apply GIL effectively, even in nuanced
+                            interactions.
+                        </p>
+                    </div>
+
+
+                    <div class="details-section" id="Impact">
+                        <h1>Impact</h1>
+                        <p>
+                            This project has had a profound personal impact on me, both as the lead developer and as
+                            someone who speaks English as a second language. Working on Shibu has deepened my
+                            understanding of the complexities of language, particularly how subtle biases can manifest
+                            in communication. As a non-native speaker, I initially found pronoun usage to be a
+                            challenge, but through this project, I’ve gained a greater awareness of how these challenges
+                            extend to both native and non-native speakers alike. Leading this project has not only
+                            strengthened my technical and leadership skills but has also transformed the way I approach
+                            language and inclusivity in my everyday interactions. By creating a tool that educates
+                            others on gender-inclusive language, I’ve also learned how to navigate and promote more
+                            equitable communication for myself and those around me.
+                        </p>
+                        <h2>Generative Steps:</h2>
+                        <p>
+                            Autoethnography: Of three researchers on this team, 2 were English as a second language
+                            speakers who shared the same culture, societal, and religious values. We, as researchers,
+                            kept and recorded our daily experiences, struggles, and challenges of using GIL. This step
+                            allowed us, as the researcher to explore their own lived experience as both a learner and a
+                            user of GIL. This adds depth to the research by focusing on how individual learners grapple
+                            with learning new language structures and social norms related to gender inclusivity.
+                        </p>
+                        <h2>Insights from Authethnography:</h2>
+                        <ol>
+                            <li>Lack of Familiarity with Non-Binary Pronouns: We as learners struggled with using
+                                non-binary pronouns like "they/them" as singular pronouns because we’ve traditionally
+                                been taught that "they" is plural in English grammar. This grammatical shift can cause
+                                confusion and hesitation. </li>
+                            <li>Cultural and Societal Norms: In our cultures, gender norms are
+                                deeply embedded in language and society. Using GIL might feel unfamiliar or even
+                                socially uncomfortable, especially since we come from societies where gender is strictly
+                                binary (male/female). </li>
+
+                            <li>Grammar and Syntax Complexity: GIL introduces complexity, such as
+                                using singular "they" and avoiding gendered terms like "he/she," "sir/ma’am," or
+                                "man/woman." The complexities of grammar (e.g., subject-verb agreement with singular
+                                "they") can lead to confusion and be difficult for ESL speakers, such as us, who are
+                                still mastering English grammar and vocabulary. For example, ESL speakers struggle to
+                                correctly use "they" in sentences like "They is/are going to the store." This can slow
+                                down adoption and create frustration. </li>
+
+                            <li>Fear of Making Mistakes: As ESL speakers navigate
+                                unfamiliar territory, we fear using GIL incorrectly, especially if we are unsure of
+                                pronouns or terminology. This can lead to hesitation or avoidance of GIL altogether.
+                            </li>
+
+                            <li>Lack of Practice: We observed that as ESL speakers, we don’t get enough opportunities to
+                                practice GIL before using it for real conversations, leading to difficulties in adopting
+                                it fluently.</li>
+
+                            <li>Lack of Clear Guidance or Resources: We also noticed that as ESL speakers,
+                                we may find that there is limited guidance or learning materials explicitly designed to
+                                teach GIL. Most ESL curricula are still based on traditional grammar and gender norms,
+                                with little emphasis on inclusivity.</li>
+
+                            <li>Translational Barriers: Translating GIL from
+                                English into our native language is very difficult. Many languages have strict gendered
+                                nouns, pronouns, or verb forms, and the concept of gender neutrality might not exist.
+                                Hence, speakers might find it difficult to reconcile GIL in English with their native
+                                language’s gendered structure. For example, in languages like Hindi, nouns, adjectives,
+                                and verbs are gendered, and we were not sure how to adapt English's gender-neutral
+                                concepts into our native linguistic framework.</li>
+
+                            <li>Emotional or Cognitive Overload: Adopting
+                                GIL requires mental effort, especially when speakers are already dealing with the
+                                challenges of mastering a second language. The added layer of gender inclusivity might
+                                feel overwhelming for some.</li>
+                        </ol>
+                        <p>
+                            Researching Existing Games: A variety of existing games and tools have already addressed
+                            gender identity and inclusivity, often with positive outcomes. Several games offering
+                            diverse gender options, like avatar customization, lead to increased knowledge and
+                            acceptance of gender diversity among players. Serious games like Gender Quest, Respectful
+                            Relationship, and Queers in Love at the End of the World have been successfully used to
+                            educate players on gender neutrality, stereotypes, and biases. While these efforts
+                            contribute significantly to the broader conversation around gender equality and
+                            representation, explicit focus on the use of personal pronouns and gender-inclusive language
+                            in games is still in its early stages, indicating room for growth and further development in
+                            this space.
+                        </p>
+                    </div>
+
+                    <div class="details-section" id="dd">
+                        <h1>Design and Development</h1>
+                        <p>
+                            We designed a text-based RPG that features a gender-neutral superhero, Shibu. The players
+                            step into the shoes of novice reporters shadowing Shibu on their adventures, utilizing
+                            gender-neutral pronouns to narrate Shibu's actions and character.  The game was designed to
+                            be hosted on a discord server, it employs Natural Language Processing (NLP) to evaluate
+                            player responses and shape the narrative accordingly. Players interact with non-player
+                            characters (NPCs) and the gaming environment within a Discord server, ultimately crafting a
+                            comprehensive story of their own.
+                        </p>
+                    </div>
+
+                    <div class="details-section" id="er">
+                        <h1>Evaluative Research</h1>
+                        <p>
+                            We organized extensive playtesting sessions followed by semi-structured interviews. We
+                            recruited individuals to playtest our game, aiming for a diverse group that included
+                            specific personal pronoun users, non-native English speakers, and native English speakers.
+                            Our final group consisted of nine participants, with three of us hosting three playtesting
+                            sessions each as the "Editor." All playtesters were invited to our discord server, "Santa
+                            Clara Times." Upon joining a pre-assigned channel, the "Editor" welcomed them, asked for
+                            their consent via a Google form, and registered them as players. Once ready, the game,
+                            lasting around 15-20 minutes, commenced.  The Editor would present a visual and request
+                            players to narrate the scene. The Editor's script was designed to encourage players to
+                            employ personal pronouns and elaborate their descriptions, which would allow the language
+                            model to accurately analyze the text. At the end of the playtesting, the Editor would inform
+                            the player about the instances where their use of personal pronouns might have been
+                            inappropriate. Additionally, this playtesting session was followed by semi-structured
+                            interviews.
+                        </p>
+
+                        <h2>Insights we learned from Playtesting and Semi-Structured Interviews:</h2>
+                        <ol id="insights-list">
+                            <li><b>Curiosity and Discussion Sparked by GIL:</b> The inclusion of GIL in the game generated
+                                curiosity and discussion among the players. This indicates that GIL can serve as a
+                                conversation starter and educational tool, even in environments where it may not be
+                                widely practiced.</li>
+                            <li><b>Increased Carefulness and Familiarity Toward the End:</b> Toward the end of the game,
+                                players exhibited greater carefulness and familiarity with using inclusive language.
+                                This suggests that prolonged exposure to GIL in the game context helped players become
+                                more accustomed to it, signaling the potential for game-based learning to effectively
+                                reinforce inclusive language practices over time.</li>
+                            <li><b>Default to Male Pronouns or Roles:</b> From our playtesting session, we observed that the
+                                majority of players defaulted to using male pronouns or assigning male roles to
+                                characters, particularly when gender was unspecified. This suggests that players rely on
+                                ingrained linguistic or cultural habits when gender cues are absent. When we asked about
+                                this during interviews, most of the players still defaulted to the use of male pronouns
+                                for various NPCs from the game.</li>
+                            <li><b>Visual Cues Influence Pronoun Usage (Specific to Superhuman Shibu):</b> The visual design of
+                                the character "Superhuman Shibu" strongly influenced players' pronoun choices, with
+                                players being more likely to adjust pronouns based on the character's appearance. This
+                                indicates that visual cues can play a crucial role in guiding players' understanding and
+                                adoption of gender-inclusive language (GIL), though this effect was less prominent with
+                                other characters.</li>
+                            <li><b>Inconsistency with Non-Player Characters (NPCs):</b> A significant observation was the
+                                inconsistent use of pronouns with NPCs. Players did not maintain a consistent approach
+                                to assigning pronouns, which suggests that either the cues provided by NPCs were unclear
+                                or that players found it challenging to track and implement GIL when interacting with
+                                multiple characters.</li>
+                            <li><b>Struggle with Using Certain Pronouns:</b> When prompted or nudged to use non-traditional or
+                                gender-neutral pronouns, many players demonstrated difficulty. This highlights a lack of
+                                familiarity or comfort with gender-inclusive pronouns, suggesting the need for more
+                                guidance or practice opportunities to build confidence.</li>
+                            <li><b>Typing Full-Text Responses Was Challenging for Players:</b> The game required players to
+                                type their responses. Players found it difficult to type out full-text responses,
+                                particularly when responding to open-ended questions or prompts that required thoughtful
+                                reflection on gender pronouns. This suggests that simplifying input methods or offering
+                                shortcuts (e.g., pronoun selection menus) could enhance the overall user experience and
+                                reduce friction in the adoption of GIL.</li>
+                        </ol>
+                    </div>
+                    <div class="shibu-imgs">
+                        <img src="./assets/shibu1.png" alt="" />
+                        <img src="./assets/shibu2.png" alt="" />
+                    </div>
+                </div>
+
+
+            </div>
+
+        </main>
+        <footer class="footer" id="work">
+            <div>
+                <h1>Contact</h1>
+            </div>
+            <div class="footer-item-container">
+                <div class="footer-item">
+                    <h2>Mail me at :</h2>
+                    <a href="mailto:sksisodi@ucsc.edu">sksisodi@ucsc.edu</a>
+                </div>
+                <div class="footer-item">
+                    <h2>Contact me :</h2>
+                    <a href="#">+1-669-388-2469</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="work.js" defer></script>
+</body>
+
+</html>
