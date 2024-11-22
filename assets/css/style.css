@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -71,7 +76,13 @@ a {
   font-family: "Quicksand", serif;
   font-size: 1.5rem;
   display: none; /* hide the button */
+  cursor: pointer;
 }
+
+.btn-container button:active {
+  color: #685555;
+}
+
 .star {
   display: none; /* hide the star icon */
 }
@@ -118,10 +129,13 @@ a {
   font-family: "Quicksand", serif;
   font-size: 1.5rem;
   color: #685555;
+  margin: 0%;
 }
+
 .hero-left h1 {
   font-size: 4.5rem;
   color: #685555;
+  font-weight: 400;
 }
 
 .hero-right {
@@ -162,6 +176,7 @@ a {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  cursor: pointer;
 }
 .work-item .pin {
   position: relative;
@@ -169,6 +184,27 @@ a {
   left: 1px;
   height: 30px;
 }
+
+.shweta {
+  display: flex;
+  align-items: center;
+}
+
+.shweta #img1{
+  position: relative;
+  top: 21px;
+  left: -220px;
+  height: 15px;
+}
+
+.shweta #img2{
+  position: relative;
+  top: 23px;
+  left: -12px;
+  height: 15px;
+}
+
+
 .work-item h2 {
   font-size: 1.5rem;
   color: #685555;
@@ -441,6 +477,9 @@ a {
     width: 100%;
     text-align: center;
   }
+  .shweta {
+    justify-content: center;
+  }
 
   .hero-right {
     width: 100%;
@@ -466,14 +505,14 @@ a {
   .work-item-img-container {
     width: 100%; /* Add position relative to image container for pin positioning */
     display: flex;
-    items-center: center;
+    align-items: top;
     justify-content: center;
   }
 
   .work-item .pin {
     position: relative;
     top: -15px;
-    left: 25px;
+    left: 15px;
     height: 30px;
   }
 
