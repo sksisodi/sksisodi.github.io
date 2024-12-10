@@ -35,8 +35,12 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.getElementById("about").addEventListener("click", function() {
+  window.location.href = "about.html";
+});
+
 document.getElementById("alchemist").addEventListener("click", function() {
-  window.location.href = "work.html";
+  window.location.href = "alchemist.html";
 });
 
 document.getElementById("gamemech").addEventListener("click", function() {
