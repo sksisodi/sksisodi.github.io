@@ -35,12 +35,8 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document.getElementById("about").addEventListener("click", function() {
-  window.location.href = "about.html";
-});
-
 document.getElementById("alchemist").addEventListener("click", function() {
-  window.location.href = "alchemist.html";
+  window.location.href = "work.html";
 });
 
 document.getElementById("gamemech").addEventListener("click", function() {
@@ -80,9 +76,41 @@ document.addEventListener("DOMContentLoaded", () => {
       const stars = document.querySelectorAll(".star");
       stars.forEach((star) => star.remove());
 
-      const starHTML = `<img src="./assets/images/star_white.png" alt="" class="star" />`;
+      const starHTML = `<img src="./assets/star_white.png" alt="" class="star" />`;
       activeButton.insertAdjacentHTML("beforebegin", starHTML);
       activeButton.insertAdjacentHTML("afterend", starHTML);
     }
   }
 });
+
+const texts = ["Mixed-Method Researcher", "Data Scientist", "UX Researcher"];
+let textIndex = 0;
+let charIndex = 0;
+const typingSpeed = 100; // Speed of typing (ms)
+const erasingSpeed = 50; // Speed of erasing (ms)
+const delayBetweenTexts = 1500; // Delay before starting the next text
+const typewriter = document.getElementById("typewriter");
+
+function type() {
+  if (charIndex < texts[textIndex].length) {
+    typewriter.textContent = "a " + texts[textIndex].substring(0, charIndex + 1) + ".";
+    charIndex++;
+    setTimeout(type, typingSpeed);
+  } else {
+    setTimeout(erase, delayBetweenTexts);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    typewriter.textContent = "a " + texts[textIndex].substring(0, charIndex - 1) + ".";
+    charIndex--;
+    setTimeout(erase, erasingSpeed);
+  } else {
+    textIndex = (textIndex + 1) % texts.length;
+    setTimeout(type, typingSpeed);
+  }
+}
+
+// Start the typewriter effect
+document.addEventListener("DOMContentLoaded", () => setTimeout(type, 1000));

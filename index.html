@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shweta-Sasodiya-Portfolio</title>
+    <title>Shweta-Sisodiya-Portfolio</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -65,11 +65,11 @@
         <div class="nav-right">
           <div class="btn-container">
             <img src="./assets/images/star_white.png" alt="" class="star" />
-            <button id="aboutBtn" onclick="scrollToSection('about')" class="nav-btn">About</button>
+            <button id="aboutBtn" onclick="scrollToSection('about')" class="nav-btn">Home</button>
             <img src="./assets/images/star_white.png" alt="" class="star" />
             <button id="workBtn" onclick="scrollToSection('work')" class="nav-btn">Work</button>
             <button id="publicationsBtn" onclick="scrollToSection('publications')" class="nav-btn">Publications</button>
-            <button id="contactBtn" onclick="scrollToSection('contact')" class="nav-btn">Contact</button>
+            <button  class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About Me </a></button>
 
           </div>
           <div class="link-container">
@@ -98,19 +98,83 @@
           <div class="hero-left">
             <p>Hello, I'm</p>
             <div class="shweta">
-            <h1>Shweta</h1>
-            <img id="img1" src="./assets/images/start_brown.png" alt=""/> 
-            <img id="img2" src="./assets/images/start_brown.png" alt=""/>
-            </div>
-            <p>
-              I'm a Researcher and Data Scientist who believes that every user interaction tells
-              a story. I'm passionate about uncovering those stories and using them to create meaningful experiences to solve-real world problems.
+            <h1 style="margin-top: -15px; margin-left: 10px;">Shweta</h1>
+            <!-- <img id="img1" src="./assets/images/start_brown.png" alt=""/> 
+            <img id="img2" src="./assets/images/start_brown.png" alt=""/> -->
+            </div >
+            <p id="typewriter" style="margin-top: -50px; margin-left: 30px;">
+              a Mixed-Method Researcher
             </p>
+            <div class="link-container">
+              <ul>
+                <!-- <li>
+                  <a href="twitter.html"
+                    ><img src="./assets/images/twitter.png" alt=""
+                  /></a>
+                </li> -->
+                <li>
+                  <a href="www.linkedin.com/in/sksisodig" class="angled-box"><img src="./assets/images/linkedin.png" alt="Linkedin" /></a>
+              </li>
+              <li>
+                  <a href="https://github.com/sksisodi" class="angled-box"><img src="./assets/images/github.png" alt="github" /></a>
+              </li>
+              <li>
+                  <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="angled-box" ><img src="./assets/images/scholar.png" alt="Google scholar" /></a>
+              </li>
+              </ul>
+            </div>
           </div>
           <div class="hero-right">
             <img src="./assets/images/girl.png" alt="a girl" />
           </div>
         </header>
+
+        <div id="publications"  data-section="publications" class="publication-section">
+          <h1>Research Publications</h1>
+          <ul>
+            <li>
+              <h2>
+                Pseudo-Scientist: Towards Narrative Interventions for Imposter
+                Syndrome
+              </h2>
+              <p>
+                Venue : The Annual Symposium on Computer-Human Interaction in
+                Play (CHI PLAY) 2024 (Full-paper - In Review)
+              </p>
+            </li>
+            <li>
+              <h2>Interactive Narratives for Imposter Syndrome</h2>
+              <p>
+                Venue : The Annual Symposium on Computer-Human Interaction in
+                Play (CHI PLAY) 2024 (Full-paper - In Review)
+              </p>
+            </li>
+            <li>
+              <h2>
+                Under Pressure: A Multi-Modal Analysis of Induced Stressors in
+                Games for Resilience
+              </h2>
+              <p>
+                Venue : International Conference on the Foundations of Digital
+                Games 2023 (Full-paper)
+              </p>
+            </li>
+            <li>
+              <h2>Gender, Cultures, and Communication</h2>
+              <p>Venue : ACM CHI 2022 (Workshop)</p>
+            </li>
+            <li>
+              <h2>
+                A Data-driven Design of AR Alternate Reality Games to Measure
+                Resilience
+              </h2>
+              <p>
+                A Data-driven Design of AR Alternate Reality Games to Measure
+                Resilience
+              </p>
+            </li>
+          </ul>
+        </div>
 
         <div id="work" data-section="work" class="work-section">
           <h2>Work</h2>
@@ -235,52 +299,7 @@
           </div>
         </div>
 
-        <div id="publications"  data-section="publications" class="publication-section">
-          <h1>Research Publications</h1>
-          <ul>
-            <li>
-              <h2>
-                Pseudo-Scientist: Towards Narrative Interventions for Imposter
-                Syndrome
-              </h2>
-              <p>
-                Venue : The Annual Symposium on Computer-Human Interaction in
-                Play (CHI PLAY) 2024 (Full-paper - In Review)
-              </p>
-            </li>
-            <li>
-              <h2>Interactive Narratives for Imposter Syndrome</h2>
-              <p>
-                Venue : The Annual Symposium on Computer-Human Interaction in
-                Play (CHI PLAY) 2024 (Full-paper - In Review)
-              </p>
-            </li>
-            <li>
-              <h2>
-                Under Pressure: A Multi-Modal Analysis of Induced Stressors in
-                Games for Resilience
-              </h2>
-              <p>
-                Venue : International Conference on the Foundations of Digital
-                Games 2023 (Full-paper)
-              </p>
-            </li>
-            <li>
-              <h2>Gender, Cultures, and Communication</h2>
-              <p>Venue : ACM CHI 2022 (Workshop)</p>
-            </li>
-            <li>
-              <h2>
-                A Data-driven Design of AR Alternate Reality Games to Measure
-                Resilience
-              </h2>
-              <p>
-                A Data-driven Design of AR Alternate Reality Games to Measure
-                Resilience
-              </p>
-            </li>
-          </ul>
-        </div>
+        
       </div>
 
       <footer id="contact" data-section="contact" class="footer">

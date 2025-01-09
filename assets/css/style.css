@@ -344,6 +344,29 @@ a {
   width: 1rem;
 }
 
+.angled-box {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  position: relative;
+  background-color: #e2725b; /* Box background color */
+  color: #fff; /* Text or link color */
+  border-radius: 5px; /* For rounded corners */
+  }
+
+.angled-box img {
+  display: block;
+  width: 20px; /* Adjust size of the icon as needed */
+  height: auto;
+}
+
+/* Optional: Hover effect */
+.angled-box:hover {
+  background-color: #c96052; /* Slightly darker shade for hover */
+  transform: scale(1.05);  /*Subtle zoom effect */
+}
+
+
 @media screen and (min-width: 1024px) {
   .btn-container button,
   .star,
