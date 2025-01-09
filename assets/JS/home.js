@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const stars = document.querySelectorAll(".star");
       stars.forEach((star) => star.remove());
 
-      const starHTML = `<img src="./assets/star_white.png" alt="" class="star" />`;
+      const starHTML = `<img src="./assets/images/star_white.png" alt="" class="star" />`;
       activeButton.insertAdjacentHTML("beforebegin", starHTML);
       activeButton.insertAdjacentHTML("afterend", starHTML);
     }

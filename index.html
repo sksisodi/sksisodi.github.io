@@ -65,20 +65,21 @@
         <div class="nav-right">
           <div class="btn-container">
             <img src="./assets/images/star_white.png" alt="" class="star" />
-            <button id="aboutBtn" onclick="scrollToSection('about')" class="nav-btn">Home</button>
+            <button id="homeBtn" onclick="scrollToSection('home')" class="nav-btn">Home</button>
             <img src="./assets/images/star_white.png" alt="" class="star" />
             <button id="workBtn" onclick="scrollToSection('work')" class="nav-btn">Work</button>
             <button id="publicationsBtn" onclick="scrollToSection('publications')" class="nav-btn">Publications</button>
-            <button  class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About Me </a></button>
+            <button id="aboutBtn" class="nav-btn" onclick="redirectToLink()">About</button>
+            <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
 
           </div>
-          <div class="link-container">
+          <!-- <div class="link-container">
             <ul>
-              <!-- <li>
+              <li>
                 <a href="twitter.html"
                   ><img src="./assets/images/twitter.png" alt=""
                 /></a>
-              </li> -->
+              </li> 
               <li>
                 <a href="www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
             </li>
@@ -89,12 +90,12 @@
                 <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img src="./assets/images/scholar.png" alt="" /></a>
             </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
 
       <main class="main-section">
-        <header data-section="about" class="hero-section">
+        <header data-section="home" class="hero-section">
           <div class="hero-left">
             <p>Hello, I'm</p>
             <div class="shweta">
@@ -320,6 +321,11 @@
     </main>
 
     <script src="assets/JS/home.js" defer></script>
+    <script>
+      function redirectToLink() {
+        window.open("https://www.interactiondynamicslab.com/shweta", "_blank"); // Redirects to the specified URL
+      }
+    </script>
     <a href="https://info.flagcounter.com/3NMB"><img src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
   </body>
 </html>
