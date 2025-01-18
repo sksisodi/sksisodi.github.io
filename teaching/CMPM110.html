@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shweta-Sisodiya-Portfolio</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="nav-bar">
+        <a class="link" href="index.html"
+          ><div class="nav-left">
+            <img src="../assets/images/Icon.png" alt="logo" />
+            <h1>Shweta</h1>
+          </div></a
+        >
+
+        <img src="../assets/images/hamburger.png" alt="" class="ham-icon" />
+        <div class="nav-right-alt">
+          <div class="menu-bar-alt">
+            <div class="btn-container-alt">
+              <a href="about.html"><button id="about">About</button></a>
+              <a href="work.html"><button>Work</button></a>
+              <a href="contact.html"><button>Contact</button></a>
+              <a href="publications.html"><button>Publications</button></a>
+            </div>
+            <div class="link-container-alt">
+              <ul>
+                <!-- <li>
+                  <a href="twitter.html"
+                    ><img src="./assets/images/twitter.png" alt=""
+                  /></a>
+                </li> -->
+                <li>
+                  <a href="https://www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                  <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
+              </li>
+              <li>
+                  <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img src="./assets/images/scholar.png" alt="" /></a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <div class="btn-container">
+            <img src="../assets/images/star_white.png" alt="" class="star" />
+            <button id="homeBtn" onclick="scrollToSection('home')" class="nav-btn">Home</button>
+            <img src="../assets/images/star_white.png" alt="" class="star" />
+            <button id="workBtn" onclick="scrollToSection('work')" class="nav-btn">Work</button>
+            <button id="publicationsBtn" onclick="scrollToSection('publications')" class="nav-btn">Publications</button>
+            <button id="aboutBtn" class="nav-btn" onclick="redirectToLink()">About</button>
+            <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
+
+          </div>
+          <!-- <div class="link-container">
+            <ul>
+              <li>
+                <a href="twitter.html"
+                  ><img src="./assets/images/twitter.png" alt=""
+                /></a>
+              </li> 
+              <li>
+                <a href="www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
+            </li>
+            <li>
+                <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
+            </li>
+            <li>
+                <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img src="./assets/images/scholar.png" alt="" /></a>
+            </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+
+      <main class="main-section">
+        <header data-section="home" class="hero-section">
+          <div class="hero-left">
+            <div class="shweta">
+            <h1 >Game Writing Technologies</h1><br>
+            <img id="img1" src="images/classpics.png" alt=""/>
+            </div >
+            <p style="margin-top: -15px; margin-bottom: 25px; font-weight: 600;"> Instructor: Noah Wardrip-Fruin</p>
+            <p>
+              Game writers create worlds, characters, and stories — and also craft computational systems so that players can experience these fictions interactively. This course covers the fundamentals of authoring fictions and systems that work together toward powerful player experiences.
+
+              From the perspective of players, we’ll be creating things like: worlds they can move around in, objects they can manipulate, puzzles they can solve, characters they can talk with, and stories they can shape through their choices. From our perspective, we’ll be combining the tools of fiction writing with the tools of computer programming and systems design. 
+            </p>
+          </div>
+          <div class="hero-right">
+            <img src="images/classpics.png" alt="a girl"  style="height: 500px;"/>
+          </div>
+        </header>
+
+        <div id="news" data-section="news" class="news-section">
+          <!-- <h1>Highlights</h1> -->
+        </div>
+
+        <div id="publications"  data-section="publications" class="publication-section">
+          
+        </div>
+
+        <div id="work" data-section="work" class="work-section">
+          
+        </div>
+
+        
+      </div>
+
+      <footer id="contact" data-section="contact" class="footer">
+        <div>
+          <h1>Contact</h1>
+        </div>
+        <div class="footer-item-container">
+          <div class="footer-item">
+            <h2>Mail me at :</h2>
+            <a href="mailto:sksisodi@ucsc.edu">sksisodi@ucsc.edu</a>
+          </div>
+          <!-- <div class="footer-item">
+            <h2>Contact me :</h2>
+            <a href="#">+1-669-388-2469</a>
+          </div> -->
+        </div>
+      </footer>
+    </main>
+
+    <script src="../assets/JS/home.js" defer></script>
+    <script>
+      function redirectToLink() {
+        window.open("https://sksisodi.github.io/about", "_blank"); // Redirects to the specified URL
+      }
+    </script>
+    <a href="https://info.flagcounter.com/3NMB"><img src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+  </body>
+</html>
