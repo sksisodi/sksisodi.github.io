@@ -87,7 +87,7 @@ const texts = ["Mixed-Method Researcher", "Data Scientist", "UX Researcher"];
 let textIndex = 0;
 let charIndex = 0;
 const typingSpeed = 100; // Speed of typing (ms)
-const erasingSpeed = 50; // Speed of erasing (ms)
+const erasingSpeed = 40; // Speed of erasing (ms)
 const delayBetweenTexts = 1500; // Delay before starting the next text
 const typewriter = document.getElementById("typewriter");
 
