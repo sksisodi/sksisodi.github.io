@@ -92,7 +92,7 @@ a {
   list-style-type: none;
   display: flex;
   gap: 1.25rem;
-  display: none; /* hide the icon links */
+  /*display: none;  hide the icon links */
 }
 
 .link-container ul li {

@@ -116,16 +116,35 @@
 }
 
 
+/* 1. Hide by default on large screens */
+.mobile-social-links {
+    display: none; 
+    width: 100%;
+    /* Copy styling from original list for spacing */
+    padding-left: 30px; 
+}
+
+/* 2. Style the list to look like the original link-container */
+.mobile-social-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.25rem;
+    padding: 0;
+    margin: 0;
+    /* Ensure list items display inline */
+}
+
+
 /* Responsive adjustment for small screens */
 @media screen and (max-width: 600px) {
     .impact-figures-container {
         flex-direction: column;
         align-items: center;
     }
-    .impact-figure-item {
-        width: 80%; /* Takes up most of the width on mobile */
+    /* .impact-figure-item {
+        width: 100%; /* Takes up most of the width on mobile 
         min-height: 100px;
-    }
+    } */
     .footer-left-content {
         /* Stacks the H1 and the link columns on small screens */
         flex-direction: column; 
@@ -135,6 +154,19 @@
     /* Ensure the flag counter is also centered when stacked */
     .footer-right {
         align-self: center; 
+    }
+    /* Make the new container visible on mobile */
+    .mobile-social-links {
+        display: block; 
+        margin-top: 20px;
+        /* Remove the forced left padding for mobile centering */
+        padding-left: 0; 
+    }
+    
+    /* Center the list items horizontally */
+    .mobile-social-links ul {
+        justify-content: center;
+        width: 100%; 
     }
 }
 
