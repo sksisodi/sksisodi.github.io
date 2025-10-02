@@ -1,0 +1,140 @@
+/* --- New Styles for Impact Figures Section --- */
+
+.impact-figures-section {
+    width: 100%;
+    margin: 0rem auto 0; /* Add top margin to separate it from the hero section */
+}
+
+.impact-figures-container {
+    display: flex;
+    justify-content: space-around; /* Distributes items evenly */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 0.5rem; /* Space between the figure items */
+    padding: 10px 0;
+    /* Optional: Add a light background to make the whole section pop */
+    /* background-color: #f7f7f7; */
+}
+
+.impact-figure-item {
+    /* Styles to make it look like a button/card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Using your colors for visual interest */
+    background-color: #fff; /* White background */
+    border: 1px solid #e2725b; /* Border matching your nav bar color */
+    border-radius: 8px;
+    padding: 10px 15px;
+    
+    /* Ensure all items have a consistent size for visual balance */
+    width: 140px; 
+    min-height: 100px;
+    text-align: center;
+    
+    /* Subtle shadow for a lift effect */
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.impact-figure-item:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.impact-number {
+    /* Styles for the large H2 number */
+    font-family: "Quicksand", serif;
+    font-size: 2.5rem; /* Large size for impact */
+    color: #e2725b; /* Your primary color */
+    font-weight: 700;
+    margin: 0 0 1px 0;
+    line-height: 1.1;
+}
+
+.impact-text {
+    /* Styles for the descriptive text (P tag) */
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    color: #685555; /* Your body text color */
+    margin: 0;
+    font-weight: 500;
+}
+.footer-right {
+    /* Ensures the flag counter is centered vertically with the rest of the content */
+    align-self: center;
+}
+.footer-left-content {
+    display: flex;
+    /* Arranges the H1 and the link container side-by-side */
+    gap: 3.5rem; 
+    align-items: center;
+}
+
+/* --- New CSS for the Standalone Resume Button --- */
+
+.resume-button {
+    /* Overrides the default white background for a prominent CTA color */
+    background-color: #fff; /* White background */
+    border: 1px solid #e2725b;
+    
+    /* Ensure the link looks like a button and has no default link styles */
+    text-decoration: none !important;
+    display: inline-flex; /* Use flex properties from .impact-figure-item */
+    align-items: center;
+    justify-content: center;
+    
+    /* Gives it a slightly bigger presence than the small impact figures */
+    max-width: 75px; 
+    min-height: 30px; 
+    padding: 1px 1px;
+    /* Ensure cursor indicates it's clickable */
+    cursor: pointer;
+}
+
+.resume-button:hover {
+    /* Hover state using your darker color from the angled-box:hover style */
+    transform: translateY(-2px);
+    box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+.resume-button .impact-number {
+    /* Change the number color to white for visibility against the dark background */
+    color: #c96052;
+    font-size: 1.2rem; /* Slightly smaller H2 for this button */
+    margin: 0 1px 0 0; /* Add a little spacing before the text */
+    font-weight: 900;
+}
+
+.resume-button .impact-text {
+    /* Change the text color to white */
+    color: #c96052;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+
+
+/* Responsive adjustment for small screens */
+@media screen and (max-width: 600px) {
+    .impact-figures-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .impact-figure-item {
+        width: 80%; /* Takes up most of the width on mobile */
+        min-height: 100px;
+    }
+    .footer-left-content {
+        /* Stacks the H1 and the link columns on small screens */
+        flex-direction: column; 
+        align-items: center;
+        gap: 1.5rem;
+    }
+    /* Ensure the flag counter is also centered when stacked */
+    .footer-right {
+        align-self: center; 
+    }
+}
+
