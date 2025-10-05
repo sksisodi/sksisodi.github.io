@@ -166,14 +166,15 @@ a {
 .work-container {
   display: flex;
   gap: 1rem;
+  align-items: stretch; 
 }
 
 .work-container-left {
-  width: 75%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 0 auto; 
+  padding: 1rem 0;
 }
 
 .work-container-right {
@@ -181,6 +182,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+   padding: 1rem 0;
 }
 .work-item {
   display: flex;
@@ -190,6 +192,9 @@ a {
   box-shadow:         0 0 10px rgba(104, 85, 85, 0.7), /* The main soft glow */        0 0 5px rgba(104, 85, 85, 0.3);
   border-radius: 15px;
   margin-bottom: 15px;
+}
+.work-item > * { /* Target immediate children of work-item */
+    flex-grow: 1;
 }
 .work-item .pin {
   position: relative;

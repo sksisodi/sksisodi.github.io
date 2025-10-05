@@ -142,12 +142,10 @@
 .soft-glow-image {
     /*Setthedesiredheightandwidth*//*1.RoundtheEdges*//*Adjustthevalue(e.g.,10px)tocontroltheroundness*/
     border-radius: 15px;
-    height: 200px;
-    width: 200px;
-    margin: -15px 5px 5px 5px;
+    height: 175px;
+    width: 175px;
+    margin: 2px 2px 2px 5px;
 }
-
-
 
 /* Responsive adjustment for small screens */
 @media screen and (max-width: 600px) {
