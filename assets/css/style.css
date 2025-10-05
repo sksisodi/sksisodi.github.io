@@ -189,7 +189,7 @@ a {
   align-items: center;
   gap: 1.5rem;
   cursor: pointer;
-  box-shadow:         0 0 10px rgba(104, 85, 85, 0.7), /* The main soft glow */        0 0 5px rgba(104, 85, 85, 0.3);
+  /* box-shadow:         0 0 10px rgba(104, 85, 85, 0.7),       0 0 5px rgba(104, 85, 85, 0.3); */
   border-radius: 15px;
   margin-bottom: 15px;
 }
