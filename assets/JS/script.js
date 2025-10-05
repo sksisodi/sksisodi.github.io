@@ -17,3 +17,5 @@ window.addEventListener("resize", handleResize);
 
 // Initial check in case the page is already wide
 handleResize();
+
+

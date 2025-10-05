@@ -34,7 +34,9 @@
     text-align: center;
     
     /* Subtle shadow for a lift effect */
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+         box-shadow: 
+        0 0 10px rgba(104, 85, 85, 0.7), /* The main soft glow */
+        0 0 5px rgba(104, 85, 85, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: default;
 }
@@ -92,7 +94,11 @@
     padding: 1px 1px;
     /* Ensure cursor indicates it's clickable */
     cursor: pointer;
+    box-shadow: 
+        0 0 10px rgba(104, 85, 85, 0.7), /* The main soft glow */
+        0 0 5px rgba(104, 85, 85, 0.3);
 }
+
 
 .resume-button:hover {
     /* Hover state using your darker color from the angled-box:hover style */
@@ -133,6 +139,14 @@
     margin: 0;
     /* Ensure list items display inline */
 }
+.soft-glow-image {
+    /*Setthedesiredheightandwidth*//*1.RoundtheEdges*//*Adjustthevalue(e.g.,10px)tocontroltheroundness*/
+    border-radius: 15px;
+    height: 200px;
+    width: 200px;
+    margin: -15px 5px 5px 5px;
+}
+
 
 
 /* Responsive adjustment for small screens */
