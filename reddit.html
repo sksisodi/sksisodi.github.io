@@ -1,0 +1,155 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Reddit Stream</title>
+    <style>
+        body { font-family: sans-serif; }
+        #posts { list-style: none; padding: 0; }
+        #posts li { 
+            border-bottom: 1px solid #eee; 
+            padding: 10px; 
+            margin-bottom: 10px; 
+            animation: fadeIn 0.5s; 
+        }
+        #posts h3 { margin: 0 0 5px 0; color: #FF4500; }
+        #posts p { font-size: 0.9em; color: #555; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time r/SUBREDDIT_NAME Feed</h1>
+    <ul id="posts">
+        <li>*Waiting for new posts...*</li>
+    </ul>
+
+    <script>
+        const postsList = document.getElementById('posts');
+        const ws = new WebSocket('ws://127.0.0.1:8000');
+
+        ws.onopen = () => {
+            console.log('Successfully connected to the real-time server.');
+            postsList.innerHTML = '';
+        };
+
+        ws.onmessage = (event) => {
+            try {
+                const data = JSON.parse(event.data);
+                
+                // 1. Create the new list item element
+                const listItem = document.createElement('li');
+                
+                // 2. Format the content
+                listItem.innerHTML = `
+                    <h3><a href="${data.url}" target="_blank">${data.title}</a></h3>
+                    <p>
+                        Posted by **${data.author}** at ${new Date(data.time * 1000).toLocaleTimeString()}
+                    </p>
+                `;
+
+                // 3. Insert the new item at the top of the list
+                postsList.prepend(listItem);
+
+            } catch (e) {
+                console.error("Error processing incoming message:", e);
+            }
+        };
+
+        ws.onclose = () => {
+            console.log('Disconnected from the server.');
+        };
+
+        ws.onerror = (error) => {
+            console.error('WebSocket Error:', error);
+        };
+    </script>
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Reddit Stream</title>
+    <style>
+  .header-graphic-wrapper {
+    /* Enables Flexbox */
+    display: flex;
+    
+    /* Centers all items horizontally */
+    justify-content: center;
+    
+    /* Aligns all items vertically in the middle */
+    align-items: center;
+    
+    /* Adds a small gap between the graphic elements and the text */
+    gap: 10px; 
+    
+    /* Ensures the graphic doesn't overflow the page width */
+    width: 100%;
+    margin: 0 auto; 
+}
+
+/* Style the text */
+.main-title {
+    /* Prevents the title from being compressed */
+    flex-shrink: 0; 
+    
+    /* Ensure the text baseline is aligned with the images (important for the line) */
+    line-height: 1.2; 
+}
+
+/* Style the graphic pieces to ensure proper scaling and alignment */
+.scribble-start,
+.straight-line,
+.pen-end {
+    /* Ensure the images sit correctly on the line */
+    height: 30px; /* Adjust based on the desired size of your line/pen */
+    width: auto;
+    display: block;
+}
+
+/* Adjust the scribble to only take up a small space */
+.scribble-start {
+    width: 50px; /* Example size */
+}
+
+/* Allow the straight line section to fill available space */
+.line-and-pen {
+    /* Use another flex container to manage the line and pen */
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows this section to fill the remaining horizontal space */
+}
+
+.straight-line {
+    /* Allow the line segment to stretch */
+    flex-grow: 1; 
+}
+
+.pen-end {
+    /* Keep the pen locked to its size */
+    flex-shrink: 0; 
+}
+    </style>
+</head>
+<body>
+<header class="personalized-header-container">
+    <div class="header-graphic-wrapper">
+        <img src="assets/images/scribble.png" alt="Scribble start" class="scribble-start">
+        
+        <h1 class="main-title">Your Project Title Goes Here</h1>
+        
+        <div class="line-and-pen">
+            <!-- <img src="assets/images/scribble.png"alt="Straight line" class="straight-line"> -->
+            <img src="assets/images/Gemini_Generated_Image_425q5n425q5n425q.png"  alt="Pen end" class="pen-end">
+        </div>
+    </div>
+</header>
+</body>
+</html>

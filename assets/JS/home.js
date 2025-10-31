@@ -27,25 +27,25 @@ function scrollToSection(sectionId) {
   }
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const sectionId = urlParams.get("section");
-  if (sectionId) {
-    scrollToSection(sectionId);
-  }
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   const urlParams = new URLSearchParams(window.location.search);
+//   const sectionId = urlParams.get("section");
+//   if (sectionId) {
+//     scrollToSection(sectionId);
+//   }
+// });
 
-document.getElementById("alchemist").addEventListener("click", function() {
-  window.location.href = "work.html";
-});
+// document.getElementById("alchemist").addEventListener("click", function() {
+//   window.location.href = "work.html";
+// });
 
-document.getElementById("gamemech").addEventListener("click", function() {
-  window.location.href = "gamemech.html";
-});
+// document.getElementById("gamemech").addEventListener("click", function() {
+//   window.location.href = "gamemech.html";
+// });
 
-document.getElementById("shibu").addEventListener("click", function() {
-  window.location.href = "shibu.html";
-});
+// document.getElementById("shibu").addEventListener("click", function() {
+//   window.location.href = "shibu.html";
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("[data-section]");
