@@ -6,7 +6,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Playfair Display", "Quicksand", serif;
+  /* font-family: "Playfair Display", "Quicksand", serif; */
+  font-family: "Cabin", sans-serif;
   height: 100vh;
 }
 
@@ -16,7 +17,8 @@ a {
 }
 
 .text {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Rubik", sans-serif;
   margin: 20px;
   font-size: 3rem;
   color: #685555;
@@ -73,7 +75,7 @@ a {
   border: none;
   background: none;
   color: white;
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
   font-size: 1.5rem;
   display: none; /* hide the button */
   cursor: pointer;
@@ -126,7 +128,7 @@ a {
   width: 75%;
 }
 .hero-left p {
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
   font-size: 1.5rem;
   color: #685555;
   margin: 0%;
@@ -236,33 +238,33 @@ a {
   width: 100%;
 }
 .publication-section h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   color: #685555;
   font-weight: lighter;
 }
 
 .publication-section ul {
   list-style-type: none;
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  /* gap: 0.1rem; */
   list-style: url('https://sksisodi.github.io//assets//images//start_brown.png');
 }
 
 .publication-section ul li {
-  padding-left: 1.5rem;
+  padding-left: 1.2rem;
   position: relative;
 }
 .publication-section ul li:not(:last-child) {
-  border-bottom: 1px solid #685555;
-  padding-bottom: 1rem;
+  /* border-bottom: 1px solid #685555; */
+  padding-bottom: 0rem /*0.5rem;*/
 }
 
 .publication-section ul li h2 {
   font: 1.5rem;
   color: #685555;
-  font-weight: 500;
+  /* font-weight: 500; */
 }
 
 /*recent news section*/
@@ -270,14 +272,14 @@ a {
   width: 100%;
 }
 .news-section h1 {
-  font-size: 3.5rem;
+  font-size: 3.0rem;
   color: #685555;
   font-weight: lighter;
 }
 
 .news-section ul {
   list-style-type: none;
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -328,13 +330,13 @@ a {
 .footer-item h2 {
   color: #685555;
   margin-bottom: 0;
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
   font-size: 1rem;
   font-weight: normal;
 }
 .footer-item a {
   color: #685555;
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
   text-decoration: none;
   margin: 1rem 0;
   font-size: 1.25rem;
@@ -378,7 +380,7 @@ a {
   background: none;
   color: white;
   font-size: 1.5rem;
-  font-family: "Quicksand", serif;
+  /* font-family: "Quicksand", serif; */
 }
 .link-container-alt {
   width: 100%;
