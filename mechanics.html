@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shweta-Sisodiya-Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style_2.css" />
+  <link rel="stylesheet" href="assets/css/project_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600..700&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <div class="nav-bar">
+      <a class="link" href="index.html">
+        <div class="nav-left">
+          <img src="./assets/images/Icon.png" alt="logo" />
+          <h1>Shweta Sisodiya</h1>
+        </div>
+      </a>
+      <img src="./assets/images/hamburger.png" alt="" class="ham-icon" />
+      <div class="nav-right-alt">
+        <div class="menu-bar-alt">
+          <div class="btn-container-alt">
+            <a href="about.html"><button id="about">About</button></a>
+            <a href="work.html"><button>Portfolio</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+            <a href="publications.html"><button>Paper</button></a>
+          </div>
+          <div class="link-container-alt">
+            <ul>
+              <!-- <li>
+                  <a href="twitter.html"
+                    ><img src="./assets/images/twitter.png" alt=""
+                  /></a>
+                </li> -->
+              <li>
+                <a href="https://www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img
+                    src="./assets/images/scholar.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="btn-container">
+          <button id="homeBtn" onclick="goHome()" class="nav-btn">Home</button>
+          <button id="workBtn" onclick="goPortfolio()" class="nav-btn active">Portfolio</button>
+          <button id="publicationsBtn" onclick="goPapers()" class="nav-btn ">Papers</button>
+          <button id="aboutBtn" class="nav-btn" onclick="goAbout()">About</button>
+
+          <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
+
+        </div>
+      </div>
+    </div>
+    <main class="project-page-container">
+
+      <section class="project-content-left" id="content-start">
+
+        <header class="project-header">
+          <h1 class="project-title">Unpacking the Meaning of Game Mechanics</h1>
+          <p class="project-meta">
+            <span class="meta-role">Role: Lead Quantitative Researcher & ML expert</span> |
+            <span class="meta-status">Status: Paper writing in progress</span>
+          </p>
+        </header>
+
+        <div class="project-section" id="research-overview">
+          <h2>RESEARCH OVERVIEW</h2>
+          <p>
+            The term <b>"game mechanic"</b> has been important in game research and game design for many years. However,
+            different groups in academic game studies and in the game industry have defined it in many different ways.
+            This leads to a basic question: are they all talking about the same thing? Even though each community has
+            offered its own useful definitions, there is still no widely shared agreement on what the term actually
+            means.</p>
+
+          <p>This research project uses a <b>mixed-method approach</b> that combines <b>thematic analysis and clustering
+              methods</b> to examine how different sub-communities talk about this term. The goal is to identify where
+            their definitions differ, where they overlap, and what shared understanding might exist.
+          </p>
+        </div>
+
+        <div class="project-section" id="research-questions">
+          <h2>RESEARCH QUESTIONS</h2>
+          <ol>
+            <li>To what extent do the definitions of "game mechanic" differ between academic researchers and
+              professional game designers, and how do these differences impact shared understanding?</li>
+            <li>How do the various conceptualizations of "game mechanic" influence practical communication,
+              documentation, and the decision-making process within a game design workflow?</li>
+            <li>What structural framework for classifying "game mechanics" can be derived from existing definitions that
+              is both academically sound and immediately useful for guiding iterative game design?</li>
+          </ol>
+        </div>
+
+        <div class="project-section" id="research-approach">
+          <h2>MY RESEARCH APPROACH</h2>
+          <p>
+          <ol>
+            <li>Data Collection via Systematic Literature Review</li>
+            A systematic literature review was conducted across six academic venues, several influential books, and key
+            sources from the game industry. From this process, we identified and analyzed 83 definitions of the term
+            “game mechanics.” These definitions were then organized into four categories:
+            <ol style="list-style-type: disc;">
+              <p>
+                <li><b>High Relevance:</b> Contains an original or extended definition of game mechanics that applies
+                  broadly across multiple games. Implicit definitions (such as lists of examples) were included only
+                  when they were supported by an explanation of how additional examples could be identified.</li>
+                <li><b>Medium Relevance:</b> Contains an original or extended definition of game mechanics, but the
+                  definition is limited to a single game or is only implicitly stated without a clear explanation.</li>
+                <li><b>Limited Relevance:</b> Mentions mechanics at least twice in the context of games but does not
+                  provide an original or extended definition.
+                  Very Low Relevance: Does not define game mechanics and refers to mechanics no more than once in the
+                  context of games.</li>
+            </ol>
+            </p>
+
+            <li>Data Analysis via Mixed-Method Approach</li>
+            <ol style="list-style-type: disc;">
+              <li><b>Thematic Analysis:</b> We used an open, iterative coding process with no predefined categories. Two
+                researchers independently coded the full dataset over a two-month period. Through repeated refinement
+                and alignment, this process produced a codebook containing five high-level themes.</li>
+              <li><b>Clustering Analysis:</b> Using the 41 axial codes from the final codebook, I converted each coded
+                definition into a feature string and applied k-medoids clustering to identify underlying pattern groups.
+                I also ran 25 simulation rounds to assess the stability of the clusters and to compare variation in how
+                the term is discussed across industry and academic sources.</li>
+            </ol>
+          </ol>
+          </p>
+        </div>
+        <div class="project-section" id="research-findings">
+          <h2>INITIAL RESEARCH FINDINGS</h2>
+          <p>
+          <ol>
+            <li><b>Wide Variation in Definitions:</b> We identified 83 distinct definitions of “game mechanics” across
+              the literature. While some overlap exists, each definition contains unique elements, such as “behaviors,”
+              “control mechanisms,” “design decisions,” or “procedures.” <span style="color:#c96052;">This shows that
+                the term is widely used but inconsistently defined.</span> </li>
+            <li><b>Conflicts Between Definitions:</b> We learned that despite their conceptual overlap, the definitions
+              appear to be conceptually contradictory. For example, some describe mechanics as “rules,” while others
+              describe them as “actions.” Frameworks like MDA attempt to reconcile these differences by combining rules,
+              actions, and behaviors into a single definition, but conflicts are still likely present in the literature.
+            </li>
+            <li><b>Widespread Usage but Low Clarity:</b> Our analysis found 333 publications mentioning “mechanics” at
+              least once in the context of games. Notably, 91.5% papers in data collection stage did not clarify what
+              the authors meant by the term, no definitions, examples, or citations were provided. This highlights the
+              challenge of understanding and comparing research when definitions vary.</li>
+            <li><b>Influential Works Shape Understanding:</b> Some definitions are more cited and influential than
+              others. Hunicke et al.’s MDA framework is the most referenced, with over 2,630 citations. It offers
+              multiple definitions, including both technical components (data and algorithms) and player-facing aspects
+              (actions, behaviors, control mechanisms). Citation chains show how definitions evolve.</li>
+            <li><b>Differences Across Communities:</b> Design-focused communities (e.g., DiGRA, CHI PLAY, FDG, ICEC)
+              tend to define mechanics in terms of player interaction and behavior. Computation-focused communities
+              (e.g., FDG, ToG, T-CIAIG, CoG) focus on rules and system implementation. This split shows how context
+              (design vs. technical focus) affects how the term is interpreted.</li>
+          </ol>
+          </p>
+        </div>
+        <div class="project-section" id="next-steps">
+          <h2>KEY FINDINGS & DESIGN IMPLICATIONS</h2>
+          <p>
+          <ol>
+            <li><b>Mechanics as Player Interaction:</b> The majority of definitions (49 of 83) view mechanics primarily
+              as something the player interacts with. This emphasizes the player-centered perspective in design,
+              highlighting that mechanics exist to afford meaningful choices and experiences for players.</li>
+            <li><b>Designing Player Possibilities:</b> Nine definitions specifically describe mechanics as a way for
+              designers to give players options or actions. Mechanics are not just rules, they are tools for shaping
+              player agency and emergent gameplay.</li>
+            <li><b>Making the Abstract Concrete:</b> Eight definitions frame mechanics as a way to translate abstract
+              ideas into concrete implementations. Mechanics help designers turn visions, goals, or formal concepts into
+              tangible game systems.</li>
+            <li><b>Components and Elements of Games:</b> Nine definitions describe mechanics as discrete components or
+              elements that designers manipulate. This underscores that mechanics are modular and actionable pieces
+              within a larger design system.</li>
+            <li><b>Mechanics as Tools and Mediums:</b> Six definitions see mechanics as tools for development, useful in
+              the process of designing and iterating on games. Five definitions position mechanics as the medium of
+              interaction, a bridge between designer intent and player experience, allowing designers to communicate
+              through gameplay itself.</li>
+          </ol>
+          </p>
+        </div>
+        <div class="project-section" id="conclusions">
+          <h2>IMPACT & NEXT STEPS</h2>
+          <ol>
+            <li>Impact</li>
+            <ol style="list-style-type: disc;">
+              <li>The analysis shows that mechanics are central to game design, not just as rules, but as the means
+                through which players interact with and experience the game.</li>
+              <li>Recognizing mechanics as designer tools, modular components, and mediums of interaction helps clarify
+                their role in shaping gameplay and player agency.</li>
+              <li>The diversity of definitions across literature highlights a risk of miscommunication in research and
+                design discussions, making a shared understanding important for collaboration between academic and
+                industry teams.</li>
+            </ol>
+
+            <li>Next Steps</li>
+            <ol style="list-style-type: disc;">
+              <li>Standardizing language: Developing a clearer, shared terminology for “game mechanics” could improve
+                communication between designers, researchers, and developers.</li>
+              <li>Mechanics as design patterns: Treating mechanics as modular elements could support reuse, rapid
+                prototyping, and scalable design frameworks.
+                Player-centric evaluation: Future research should explore how different conceptualizations of mechanics
+                affect player experience, engagement, and emergent behavior.</li>
+              <li>Bridging design and computation: Encouraging dialogue between design-focused and system-focused
+                perspectives could produce more robust frameworks that capture both player interaction and underlying
+                game systems.</li>
+            </ol>
+          </ol>
+        </div>
+
+      </section>
+
+      <aside class="project-toc-right">
+        <nav class="sticky-toc-nav">
+          <a href="#research-overview">RESEARCH OVERVIEW</a>
+          <a href="#research-questions">RESEARCH QUESTIONS</a>
+          <a href="#research-approach">MY RESEARCH APPROACH</a>
+          <a href="#research-findings">INITIAL RESEARCH FINDINGS</a>
+          <a href="#next-steps">KEY FINDINGS & DESIGN IMPLICATIONS</a>
+          <a href="#conclusions">IMPACT & NEXT STEPS</a>
+        </nav>
+
+        <div class="sidebar-images">
+          <figure>
+            <img src="assets/images/GM1.png" alt="Related Project Visual 1">
+            <figcaption>Caption for GM1 visualization</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/images/mechanics.png" alt="Mechanical model illustration">
+            <figcaption>Caption for mechanics diagram</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/images/All_K_Clusters_3x3_PCA.png" alt="PCA cluster visualization">
+            <figcaption>PCA clustering results (3×3)</figcaption>
+          </figure>
+
+        </div>
+      </aside>
+
+    </main>
+    <footer id="contact" data-section="contact" class="footer">
+      <div class="footer-item">
+        <p>© 2025 by Shweta Sisodiya <br>
+          Best view in desktop<br>
+          Last updated Sept 2025</p>
+      </div>
+      <div class="footer-item">
+        <p style="text-align: center;"> <b>Contat Me:</b> <br>sksisodi@ucsc.edu <br>
+          +1-571-695-0503</p>
+      </div>
+      <!-- </div> -->
+      <div class="footer-right">
+        <a href="https://info.flagcounter.com/3NMB"><img
+            src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+            alt="Flag Counter" border="0"></a>
+      </div>
+    </footer>
+
+
+    <script src="assets/JS/home.js" defer></script>
+    <script src="assets/JS/script.js" defer></script>
+    <script src="assets/JS/work.js" defer></script>
+    <script>
+      function redirectToLink() {
+        window.open("https://sksisodi.github.io/about", "_blank"); // Redirects to the specified URL
+      }
+
+      function confirmWarning() {
+        var warningMessage = "⚠️ WARNING: This project is currently in progress. Please contact Shweta directly or proceed if you have code";
+
+        // The 'confirm()' function opens a dialog box with an OK and a Cancel button.
+        // It returns 'true' if the user clicks OK, and 'false' if they click Cancel.
+        var userConfirmation = confirm(warningMessage);
+      }
+    </script>
+
+</body>
+
+</html>

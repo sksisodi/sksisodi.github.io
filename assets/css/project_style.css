@@ -1,0 +1,155 @@
+/* --- PROJECT PAGE LAYOUT STYLES --- */
+
+/* Ensure colors are consistent with previous steps */
+:root {
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --color-orange: #e2725b;
+    --color-text-dark: #222222;
+    --nav-bar-height: 90px; /* Use the height determined in previous steps */
+}
+
+.project-page-container {
+    /* 1. Set up the two-column layout using CSS Grid */
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two-thirds for content, one-third for sidebar (approx 70%/30%) */
+    gap: 3%; /* Space between columns */
+    /* 2. Center the whole layout and push it down below the fixed nav bar */
+    max-width: 75%;
+    margin: 120px auto 150px auto; /* Margin to clear the fixed top nav */
+    padding: 5px 0;
+}
+
+/* LEFT CONTENT COLUMN */
+.project-content-left {
+    /* Styles for the main text column */
+    padding-right: 20px; 
+}
+
+.project-header {
+    margin-bottom: 30px;
+}
+
+/* MAIN PROJECT TITLE */
+.project-title {
+    font-family: var(--font-heading);
+    font-weight: 400; /* Lighter weight for the main title */
+    font-size: 3.5rem;
+    color: var(--color-text-dark);
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+/* ROLE AND STATUS METADATA */
+.project-meta {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: -15px;
+}
+.meta-status {
+    color: var(--color-orange); /* Highlight the status */
+    font-weight: 600;
+}
+
+/* SUB-SECTION HEADINGS (RESEARCH OVERVIEW, QUESTIONS, etc.) */
+.project-section h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-text-dark);
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/* BODY PARAGRAPHS */
+.project-section p {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text-dark);
+    margin-bottom: 1.5rem;
+}
+.project-section p b { /* Styling for bold text inside paragraphs (like 'experiential study design') */
+    font-weight: 700;
+}
+.project-section ol li {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.sidebar-images {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    gap: 20px; /* Space between images */
+    margin-top: 40px; /* Space below the TOC menu */
+    padding-left: 5px; /* Align images with the padding/border of the TOC */
+}
+
+.sidebar-images img {
+    width: 100%; /* Ensure image fills its container width */
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* RIGHT SIDEBAR/TOC COLUMN */
+.sticky-toc-nav {
+    /* 3. Make the navigation sticky */
+    position: sticky;
+    top: var(--nav-bar-height); /* Sticks right below the main fixed nav bar */
+    padding: 10px 0 10px 20px; /* Padding for visual separation */
+    border-left: 1px solid #ddd;
+    
+    /* 4. Layout the links vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sticky-toc-nav a {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: #666;
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+.sticky-toc-nav a:hover,
+.sticky-toc-nav a.active { /* Use 'active' class to indicate current section (via JS) */
+    color: var(--color-orange);
+    font-weight: 600;
+}
+
+/* --- RESPONSIVENESS (Stacking Columns on Mobile) --- */
+@media (max-width: 1024px) {
+    .project-page-container {
+        /* Stack the columns vertically */
+        grid-template-columns: 1fr; 
+        max-width: 90%;
+    }
+    
+    .project-content-left {
+        padding-right: 0;
+    }
+    
+    .project-toc-right {
+        /* Move the TOC to the top or bottom of the content section */
+        order: -1; /* Place TOC above content on mobile */
+        margin-bottom: 20px;
+    }
+    
+    .sticky-toc-nav {
+        position: static; /* Disable sticky on small screens */
+        border-left: none;
+        border-bottom: 1px solid #ddd;
+        padding: 0 0 15px 0;
+        flex-direction: row; /* Display links horizontally or wrap */
+        flex-wrap: wrap;
+        gap: 15px 25px;
+    }
+}

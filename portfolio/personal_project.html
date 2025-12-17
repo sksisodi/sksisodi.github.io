@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shweta-Sisodiya-Portfolio</title>
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style_2.css" />
+    <link rel="stylesheet" href="assets/css/project_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+        <div class="main">
+      <div class="nav-bar">
+        <a class="link" href="index.html"><div class="nav-left">
+            <img src="./assets/images/Icon.png" alt="logo" />
+            <h1>Shweta Sisodiya</h1>
+          </div></a>
+        <img src="./assets/images/hamburger.png" alt="" class="ham-icon" />
+        <div class="nav-right-alt">
+          <div class="menu-bar-alt">
+            <div class="btn-container-alt">
+              <a href="about.html"><button id="about">About</button></a>
+              <a href="work.html"><button>Portfolio</button></a>
+              <a href="contact.html"><button>Contact</button></a>
+              <a href="publications.html"><button>Paper</button></a>
+            </div>
+            <div class="link-container-alt">
+              <ul>
+                <!-- <li>
+                  <a href="twitter.html"
+                    ><img src="./assets/images/twitter.png" alt=""
+                  /></a>
+                </li> -->
+                <li>
+                  <a href="https://www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                  <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
+              </li>
+              <li>
+                  <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img src="./assets/images/scholar.png" alt="" /></a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <div class="btn-container">
+              <button id="homeBtn" onclick="goHome()" class="nav-btn">Home</button>
+            <button id="workBtn" onclick="goPortfolio()" class="nav-btn active">Portfolio</button>
+            <button id="publicationsBtn" onclick="goPapers()" class="nav-btn ">Papers</button>
+            <button id="aboutBtn" class="nav-btn" onclick="goAbout()">About</button>
+            <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
+
+          </div>
+        </div>
+      </div>
+    <main class="project-page-container">
+        
+        <section class="project-content-left" id="content-start">
+            
+            <header class="project-header">
+                <h1 class="project-title">BLILOPLAN: YOUR PERSONALIZED INTELLIGENT READING CURATOR</h1>
+                <p class="project-meta">
+                    <span class="meta-role">Role: Project Lead</span> | 
+                    <span class="meta-status">TEAM SIZE: 1</span>
+                </p>
+            </header>
+            <div class="project-section" id="research-overview">
+                <h2>PROJECT OVERVIEW</h2>
+                <p>
+                    BiblioPlan is a Full-Stack, Serverless AI Agent designed to eliminate the mental friction of managing reading goals, thereby driving user consistency. The system automates the entire planning-and-reminder loop.
+                </p>
+                <p>
+                    Built on a robust architecture, the agent uses Python/Flask to power a web dashboard for list management and configuration. The application is deployed to Google Cloud Run and triggered daily by Cloud Scheduler. Upon activation, the agent retrieves user progress from Firestore, feeds the context to the Gemini API to generate a personalized, motivational plan, and securely dispatches the final content via transactional email.
+                </p>
+                <p>
+                  This project showcases expertise in serverless infrastructure, full-stack development, and practical LLM integration for proactive, automated user solutions.
+                </p>
+            </div>
+            <div class="project-section" id="research-questions">
+                <h2>MOTIVATION</h2>
+
+
+
+            </div>
+
+            <div class="project-section" id="research-questions">
+                <h2>CHALLENGES</h2>
+
+                <p>
+                Conducting research on international students’ use of generative AI presents unique challenges. In this project, we identified key obstacles and adopted strategies to address them effectively:
+
+                <ol>
+                <li> <b>Diverse Backgrounds and Contexts:</b> International students come from a wide range of cultural, educational, and linguistic backgrounds, which can make designing standardized research instruments and interpreting results consistently difficult. To manage this, we focused on a single demographic—Indian international students. While this introduced some bias, it allowed for deeper, culturally informed insights, leveraging the researcher’s own experience as an Indian international student. </li>
+
+                <li> <b>Self-Reporting and Behavioral Gaps:</b> Students may underreport or overreport their use of GenAI due to social desirability, fear of academic consequences, or unclear understanding of the tools’ capabilities. To capture authentic behavior, we designed data collection methods that encouraged participants to share experiences organically, rather than recalling abstract or fragmented memories.</li>
+
+                <li> <b>Ethical and Privacy Concerns:</b> Researching GenAI use involves sensitive information, including academic work, personal communication, and mental health. We prioritized methods that minimized risk of exposure, allowing participants to engage without worrying about their identities being revealed or their actions being judged.</li>
+                </ol>
+                </p>
+            </div>
+            <div class="project-section" id="research-questions">
+                <h2>MY RESEARCH APPROACH</h2>
+                <p><b>As Project Lead and Primary Researcher:</b>
+                <ol>
+
+                  <li><b>Designed an experimental study:</b> Developed a 90-minute session based on the principles of participatory structured storytelling, inquiry, and persona creation.</li>
+
+                  <li><b>Facilitated the study:</b> Conducted sessions with 30 Indian international students across 5 focus groups, recruited using purposive sampling.</li>
+
+                  <li><b>Human-in-the-loop data curation:</b> Reviewed and curated a dataset of 500+ student narratives.</li>
+
+                  <li><b>Conducted thematic analysis:</b> Synthesized 239 narratives into six thematic domains, revealing the key challenges that students address using Generative AI.</li>
+
+                  <li><b>Identified key features:</b> Determined four features that make Generative AI tools particularly appealing to international students.</li>
+
+                 <li><b>Evaluated user preferences:</b> Analyzed what students like and dislike about the tools.</li>
+
+                  <li><b>Explored future tool design:</b> Investigated how students envision the design of next-generation AI tools to better meet their needs.</li> </ol> 
+                </p>
+
+            </div>
+            <div class="project-section" id="research-questions">
+                <h2>INITIAL FINDINGS</h2>
+
+            </div>
+
+            <div class="project-section" id="next-steps">
+                <h2>IMPACT & NEXT STEPS</h2>
+                <p>
+                    The findings from this study have directly informed a set of 15+ design recommendations for reimagining LLM tools to better support international student success, currently under review.
+                </p>
+            </div>
+            
+        </section>
+
+        <aside class="project-toc-right">
+            <nav class="sticky-toc-nav">
+                <a href="#research-overview">RESEARCH OVERVIEW</a>
+                <a href="#research-questions">RESEARCH QUESTIONS</a>
+                <a href="#">CHALLENGES</a>
+                <a href="#">MY RESEARCH APPROACH</a>
+                <a href="#">INITIAL RESEARCH FINDINGS</a>
+                <a href="#next-steps">IMPACT & NEXT STEPS</a>
+            </nav>
+            
+            <div class="sidebar-images">
+                <img src="path/to/your/image1.jpg" alt="Related Project Visual 1">
+                <img src="path/to/your/image2.jpg" alt="Related Project Visual 2">
+            </div>
+        </aside>
+        
+    </main>
+     <footer id="contact" data-section="contact" class="footer">
+        <div class="footer-item">
+          <p>© 2025 by Shweta Sisodiya <br>
+            Best view in desktop<br>
+            Last updated Sept 2025</p>
+        </div>
+        <div class="footer-item">
+          <p style="text-align: center;"> <b>Contat Me:</b> <br>sksisodi@ucsc.edu <br>
+            +1-571-695-0503</p>
+        </div>
+  <!-- </div> -->
+  <div class="footer-right">
+    <a href="https://info.flagcounter.com/3NMB"><img
+        src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+        alt="Flag Counter" border="0"></a>
+  </div>
+  </footer>
+  
+
+  <script src="assets/JS/home.js" defer></script>
+  <script src="assets/JS/script.js" defer></script>
+  <script src="assets/JS/work.js" defer></script>
+  <script>
+    function redirectToLink() {
+      window.open("https://sksisodi.github.io/about", "_blank"); // Redirects to the specified URL
+    }
+
+    function confirmWarning() {
+      var warningMessage = "⚠️ WARNING: This project is currently in progress. Please contact Shweta directly or proceed if you have code";
+
+      // The 'confirm()' function opens a dialog box with an OK and a Cancel button.
+      // It returns 'true' if the user clicks OK, and 'false' if they click Cancel.
+      var userConfirmation = confirm(warningMessage);
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shweta-Sisodiya-Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style_2.css" />
+  <link rel="stylesheet" href="assets/css/project_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600..700&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main" style="margin-top: 25px;">
+    <div class="nav-bar">
+      <a class="link" href="index.html">
+        <div class="nav-left">
+          <img src="./assets/images/Icon.png" alt="logo" />
+          <h1>Shweta Sisodiya</h1>
+        </div>
+      </a>
+      <img src="./assets/images/hamburger.png" alt="" class="ham-icon" />
+      <div class="nav-right-alt">
+        <div class="menu-bar-alt">
+          <div class="btn-container-alt">
+            <a href="about.html"><button id="about">About</button></a>
+            <a href="work.html"><button>Portfolio</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+            <a href="publications.html"><button>Paper</button></a>
+          </div>
+          <div class="link-container-alt">
+            <ul>
+              <!-- <li>
+                  <a href="twitter.html"
+                    ><img src="./assets/images/twitter.png" alt=""
+                  /></a>
+                </li> -->
+              <li>
+                <a href="https://www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img
+                    src="./assets/images/scholar.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="btn-container">
+          <button id="homeBtn" onclick="goHome()" class="nav-btn">Home</button>
+          <button id="workBtn" onclick="goPortfolio()" class="nav-btn active">Portfolio</button>
+          <button id="publicationsBtn" onclick="goPapers()" class="nav-btn ">Papers</button>
+          <button id="aboutBtn" class="nav-btn" onclick="goAbout()">About</button>
+
+          <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
+
+        </div>
+      </div>
+    </div>
+    <main class="project-page-container">
+
+      <section class="project-content-left" id="content-start">
+
+        <header class="project-header">
+          <h1 class="project-title">Storyland: A Bedtime Story Generator</h1>
+          <p class="project-meta">
+            <span class="meta-role">Role: Project lead</span> |
+            <span class="meta-status">Status: Complete</span>
+          </p>
+          <p class="project-meta">
+            <span class="meta-role"><a href="https://github.com/sksisodi/Storyland.git"
+                style="color: white; background-color:#c96052; padding: 5px 5px; display: inline-block; border-radius: 7px;">Github</a></span> <span class="meta-role"><a
+                href="https://storylandsks.streamlit.app/" style="color: white; background-color:#c96052; padding: 5px 5px; display: inline-block; border-radius: 7px;">Demo</a></span>
+          </p>
+        </header>
+
+        <div class="project-section" id="research-overview">
+          <h2>OVERVIEW</h2>
+          <p>
+            Storyland is an AI-driven storytelling framework designed to craft, evaluate, and refine bedtime stories for
+            children aged 5–10. The system orchestrates multiple specialized AI roles that collaborate toward a shared
+            creative goal. Each role performs a distinct reasoning function (understanding, planning, storytelling,
+            judging, and refining) allowing the model to operate with structured decision-making rather than a single
+            one-shot prompt. (Use the Storyland Web App)</p>
+
+          <p>Storyland supports both Autonomous and Human-in-the-Loop storytelling:
+          <ol>
+
+            <li><strong>Autonomous Mode:</strong> The AI independently generates, evaluates, and refines stories until
+              they
+              meet its internal quality criteria.</li>
+            <li><strong>Human-in-the-Loop Mode:</strong> The user becomes an active co-creator — able to read the first
+              draft, provide feedback, and guide the AI to improve tone, pacing, or themes. This interaction mimics the
+              editorial loop between a writer and an editor, bringing a layer of human creativity and intent into the
+              refinement process.</li>
+            </p>
+          </ol>
+
+          </p>
+        </div>
+
+        <div class="project-section" id="research-questions">
+          <h2>MOTIVATION</h2>
+          <p>As a Ph.D. candidate deeply involved in storytelling research and narrative data, this project resonates
+            with my personal and academic interests. I’ve spent years studying how stories evoke emotion, structure
+            meaning, and adapt to different audiences, and this assignment felt like a natural extension of that
+            passion. Therefore, I designed Storyland not as just another AI storytelling demo, but as an experience that
+            blends AI design thinking with practical software engineering to explore how computational systems can mimic
+            human creativity through structured reasoning.</p>
+        </div>
+
+        <div class="project-section" id="research-approach">
+          <h2>Core Design Philosophy</h2>
+          <p>My design choices for Storyland were guided by both my background as a Ph.D. student working with
+            storytelling methods and data, and by my belief that good AI systems should reflect both creative reasoning
+            and engineering discipline. Rather than building a single end-to-end prompt, I approached the design as a
+            creative collaboration between specialized reasoning agents, each performing a defined cognitive task. This
+            mirrors how human authors, editors, and reviewers work together in real storytelling contexts.</p>
+
+
+          <h3>Key Design Decisions and Rationale</h3>
+          <ol>
+
+            <li><b>Decomposition over Monoliths: </b> Breaking the storytelling process into smaller, well-defined
+              components (Classifier, Planner, Storyteller,
+              Judge, Refiner) allowed greater interpretability and control. Each component focuses on one part of the
+              creative process — a deliberate move to make the system’s reasoning transparent and debuggable rather than
+              a
+              black box.</li>
+
+            <li><b>Structured Prompting with JSON: </b>Instead of free-form natural language chaining, I used JSON-based
+              responses (chat_strict_json) to ensure
+              deterministic outputs and stable communication between agents. This enforces a reproducible workflow —
+              essential for academic rigor and evaluation, especially in narrative research.</li>
+
+            <li><b>Automated Evaluation Loop (Judge + Refiner):</b> In creative generation, subjective quality varies
+              widely. To mitigate that, I introduced a self-critique
+              mechanism where the Judge scores the story across specific dimensions (clarity, kindness, engagement,
+              vocabulary, arc, age-fit), and the Refiner improves the text based on feedback. This iterative refinement
+              loop mirrors editorial review cycles in human storytelling (i.e., embedding a feedback-driven quality
+              control system).</li>
+
+            <li><b>Human-in-the-Loop Integration: </b>Beyond autonomous refinement, I implemented a Human-in-the-Loop
+              mode that invites users to actively
+              participate in story improvement. After reading the first AI-generated draft, users can provide targeted
+              feedback. This feedback is then reintroduced into the refinement loop, guiding the AI to adjust tone,
+              pacing, or style. It transforms Storyland from a one-way generator into an interactive storytelling
+              partner,
+              illustrating how user collaboration can enhance creativity and control.</li>
+
+            <li><b>Ethical and Safe Content Design: </b>Since the audience is children, I integrated a pre-processing
+              layer that sanitizes unsafe or violent input
+              terms. This ensures emotional safety and aligns with responsible AI storytelling principles, something I
+              study closely in my academic work.</li>
+
+            <li><b>Separation of Prompts via YAML: </b>All prompt templates are stored in prompts.yaml to decouple model
+              logic from language design. This supports
+              iterative experimentation and prompt versioning, making it easier to fine-tune tone, vocabulary, and
+              evaluation rubrics.</li>
+
+            <li><b>Streamlit Web Interface: </b>The decision to add a Streamlit interface wasn’t just about
+              accessibility, it was about transparency and
+              engagement. A graphical interface allows users to interact with the AI pipeline, see its reasoning stages,
+              and explore the refinement loop visually. It bridges research and usability, demonstrating that
+              explainable
+              AI design can also be approachable and interactive.</li>
+
+            <li><b>GitHub + Streamlit Hosting: </b>Hosting the project publicly reflects my commitment to open,
+              reproducible research. It allows others to
+              experience the model directly, clone the repository, or inspect the YAML-based prompt logic — an essential
+              aspect of transparent AI development.</li>
+          </ol>
+
+        </div>
+        <div class="project-section" id="demo">
+          <h2>How It Works</h2>
+          <p>When a user provides a story idea, the Classifier interprets intent and extracts structured context such as
+            theme, tone, and age suitability. The Planner transforms this context into a coherent narrative outline,
+            while the Storyteller expands it into a complete story using creative and age-appropriate language. Next,
+            the Judge analyzes the story across multiple criteria (e.g., clarity, kindness, engagement, narrative arc,
+            and vocabulary) returning both a numerical assessment and a critique. If any score falls below a quality
+            threshold, the Refiner automatically rewrites the story based on that feedback, creating a closed feedback
+            loop that enables self-correction and iterative improvement. This architecture demonstrates autonomous task
+            execution, role-based coordination, and continuous refinement through feedback.</p>
+
+          <h3>Autonomous Architecture (Fully AI-Driven)</h3>
+          <pre>
+User 
+  │
+  ▼
+[Classifier] ──► [Planner] ──► [Storyteller] ──► [Judge] ──► [Refiner] ──► [Output]
+                                      ▲                               │
+                                      └─────────── Feedback Loop ─────┘
+</pre>
+
+          <h3>Human-in-the-Loop Architecture</h3>
+          <pre>
+User 
+│
+▼
+[Classifier] ──► [Planner] ──► [Storyteller] ──► [Judge] ──► [Refiner] ──► [Output] ──► [Human Feedback]
+                                   ▲                                │
+                                   │                                │
+                                   └────────── Feedback Loop ───────┘
+                                ▲                                                        |
+                                │                                                        |
+                                └────────────── Human-In-Loop Feedback Loop──────────────┘
+</pre>
+
+          <h3>Pipeline Overview</h3>
+          <p>User → Classifier → Planner → Storyteller → Judge ↺ Refiner → Output</p>
+
+          <table border="1" cellpadding="5" cellspacing="0">
+            <tr>
+              <th>Component</th>
+              <th>Purpose</th>
+              <th>Key Techniques</th>
+            </tr>
+            <tr>
+              <td>Classifier</td>
+              <td>Understands the user’s prompt (e.g., “a little girl and a magical apple”) and extracts metadata like
+                age, category, length, and moral values.</td>
+              <td>Prompt-driven JSON extraction via chat_strict_json()</td>
+            </tr>
+            <tr>
+              <td>Planner</td>
+              <td>Creates a structured story outline (title, 5-bullet plot arc, reading-level hints).</td>
+              <td>Controlled JSON generation</td>
+            </tr>
+            <tr>
+              <td>Storyteller</td>
+              <td>Expands the outline into a fully written story in an age-appropriate tone.</td>
+              <td>Temperature-tuned creative generation</td>
+            </tr>
+            <tr>
+              <td>Judge</td>
+              <td>Evaluates the story using a rubric: clarity, kindness, engagement, vocabulary, arc, and age fit — and
+                returns scores with critique.</td>
+              <td>Deterministic evaluation via response_format={"type": "json_object"}</td>
+            </tr>
+            <tr>
+              <td>Refiner</td>
+              <td>Revises the story based on the judge’s critique until it meets the target quality score.</td>
+              <td>Iterative self-improvement loop</td>
+            </tr>
+          </table>
+
+
+        </div>
+        <div class="project-section" id="next-steps">
+          <h2>Future Vision</h2>
+          <h3>Current Storyland Includes</h3>
+          <ul>
+            <li>Modular multi-agent architecture (Classifier, Planner, Storyteller, Judge, Refiner)</li>
+            <li>Human-in-the-Loop co-creation mode for guided refinement</li>
+            <li>YAML-based prompting framework for maintainable and interpretable AI behavior</li>
+            <li>Iterative quality refinement loop via self-critique and re-generation</li>
+            <li>Story safety filtering to ensure age-appropriate, non-violent narratives</li>
+            <li>Streamlit-based web interface for intuitive, interactive storytelling</li>
+            <li>GitHub-hosted open demo for reproducibility and transparency</li>
+          </ul>
+
+          <h3>Possible Future Additions</h3>
+          <ul>
+            <li>Cultural dataset integration (global fairy tales and folklore for culturally grounded stories)</li>
+            <li>Multilingual story generation and local idiom adaptation</li>
+            <li>Voice narration and AI illustration support for immersive story experiences</li>
+            <li>User feedback and reinforcement-based learning loops</li>
+            <li>Emotional tone control (e.g., calming, curious, joyful modes)</li>
+            <li>Cloud API for educators and interactive learning tools</li>
+            <li>Research pipeline for analyzing narrative structure and empathy development</li>
+          </ul>
+
+
+        </div>
+        <div class="project-section" id="conclusions">
+          <h2>IMPACT</h2>
+          <p>Storyland demonstrates how AI can complement human creativity in educational and recreational contexts. It
+            empowers children with engaging and safe storytelling experiences while allowing parents, teachers, and
+            researchers to participate in narrative co-creation. By combining structured reasoning with
+            human-in-the-loop feedback, the project contributes to the development of more responsible, transparent, and
+            emotionally intelligent AI systems. Additionally, it serves as a research platform for studying narrative
+            design, empathy development, and computational creativity.</p>
+        </div>
+
+      </section>
+
+      <aside class="project-toc-right">
+        <nav class="sticky-toc-nav">
+          <a href="#research-overview">OVERVIEW</a>
+          <a href="#research-questions">MOTIVATION</a>
+          <a href="#research-approach">Core Design Philosophy</a>
+          <a href="#demo">How It Works</a>
+          <a href="#next-steps">Future Vision</a>
+          <a href="#conclusions">IMPACT</a>
+        </nav>
+
+        <div class="sidebar-images">
+          <img src="assets/images/storyland.png" alt="Related Project Visual 1">
+        </div>
+      </aside>
+
+    </main>
+    <footer id="contact" data-section="contact" class="footer">
+      <div class="footer-item">
+        <p>© 2025 by Shweta Sisodiya <br>
+          Best view in desktop<br>
+          Last updated Sept 2025</p>
+      </div>
+      <div class="footer-item">
+        <p style="text-align: center;"> <b>Contat Me:</b> <br>sksisodi@ucsc.edu <br>
+          +1-571-695-0503</p>
+      </div>
+      <!-- </div> -->
+      <div class="footer-right">
+        <a href="https://info.flagcounter.com/3NMB"><img
+            src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+            alt="Flag Counter" border="0"></a>
+      </div>
+    </footer>
+
+
+    <script src="assets/JS/home.js" defer></script>
+    <script src="assets/JS/script.js" defer></script>
+    <script src="assets/JS/work.js" defer></script>
+    <script>
+      function redirectToLink() {
+        window.open("https://sksisodi.github.io/about", "_blank"); // Redirects to the specified URL
+      }
+
+      function confirmWarning() {
+        var warningMessage = "⚠️ WARNING: This project is currently in progress. Please contact Shweta directly or proceed if you have code";
+
+        // The 'confirm()' function opens a dialog box with an OK and a Cancel button.
+        // It returns 'true' if the user clicks OK, and 'false' if they click Cancel.
+        var userConfirmation = confirm(warningMessage);
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shweta-Sisodiya-Portfolio</title>
+
+  <link rel="stylesheet" href="   assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style_2.css" />
+  <link rel="stylesheet" href="assets/css/project_style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600..700&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <div class="nav-bar">
+      <a class="link" href="index.html">
+        <div class="nav-left">
+          <img src="./assets/images/Icon.png" alt="logo" />
+          <h1>Shweta Sisodiya</h1>
+        </div>
+      </a>
+      <img src="./assets/images/hamburger.png" alt="" class="ham-icon" />
+      <div class="nav-right-alt">
+        <div class="menu-bar-alt">
+          <div class="btn-container-alt">
+            <a href="about.html"><button id="about">About</button></a>
+            <a href="work.html"><button>Portfolio</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+            <a href="publications.html"><button>Paper</button></a>
+          </div>
+          <div class="link-container-alt">
+            <ul>
+              <!-- <li>
+                  <a href="twitter.html"
+                    ><img src="./assets/images/twitter.png" alt=""
+                  /></a>
+                </li> -->
+              <li>
+                <a href="https://www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img
+                    src="./assets/images/scholar.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <div class="btn-container">
+          <button id="homeBtn" onclick="goHome()" class="nav-btn">Home</button>
+          <button id="workBtn" onclick="goPortfolio()" class="nav-btn active">Portfolio</button>
+          <button id="publicationsBtn" onclick="goPapers()" class="nav-btn ">Papers</button>
+          <button id="aboutBtn" class="nav-btn" onclick="goAbout()">About</button>
+
+          <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
+
+        </div>
+      </div>
+    </div>
+    <main class="project-page-container">
+
+      <section class="project-content-left" id="content-start">
+
+        <header class="project-header">
+          <h1 class="project-title">Pseudo-Scientist: Towards Narrative Interventions for Imposter Syndrome</h1>
+          <p class="project-meta">
+            <span class="meta-role">Role: Narrative Designer and Quantitative Researcher</span> |
+            <span class="meta-status">Status: Published at CHIPLAY'2024</span>
+          </p>
+        </header>
+
+        <div class="project-section" id="research-overview">
+          <h2>RESEARCH OVERVIEW</h2>
+          <p>
+            This research explores how interactive digital storytelling can be used as a scalable mental health
+            intervention for imposter syndrome among undergraduate STEM students. Imposter syndrome is a widespread
+            psychological experience that negatively affects confidence, well being, and academic or professional
+            growth, especially among undergraduate STEM students. Despite its prevalence, many students feel isolated in
+            these experiences and hesitate to talk about them due to stigma or fear of appearing incompetent. This
+            isolation often reinforces self doubt and prevents early support seeking.</p>
+            
+          <p>While imposter syndrome has been extensively studied, there are very few scalable and accessible
+            interventions that effectively support individuals in recognizing and normalizing these feelings. Existing
+            approaches such as workshops or therapy require significant resources and may feel intimidating or
+            inaccessible. Additionally, there is limited empirical research examining how interactive narrative design
+            can be used as a mental health intervention, particularly how specific design choices influence emotional
+            impact and engagement.</p>
+
+          <p>This research investigates interactive digital storytelling as a low barrier, scalable intervention that
+            can be deployed within educational institutions. By focusing on relatable narrative experiences rather than
+            instruction or diagnosis, the project demonstrates how human centered design can support emotional
+            validation, self reflection, and social connection around imposter syndrome.</p>
+
+        </div>
+
+        <div class="project-section" id="research-questions">
+          <h2>RESEARCH QUESTIONS</h2>
+          <ol>
+            <li>After reading a relatable interactive story themed around IS, do undergraduate
+              students report improved awareness of IS, specifically within themselves and/or peers, and
+              does this increase in awareness correspond to an improvement in mood?</li>
+            <li>How effective is a relatable interactive story themed around IS for helping readers
+              become more willing and/or able to communicate with others about IS? </li>
+            <li>Does removing the provision of choice in a branching narrative – effectively making
+              it a linear story – decrease engagement and/or impact compared to the interactive version
+              of the same story?</li>
+            <li>Does reducing the relatability of the main character decrease engagement and/or
+              impact compared to the more relatable version of the same interactive story?</li>
+          </ol>
+        </div>
+
+        <div class="project-section" id="research-approach">
+          <h2>MY RESEARCH APPROACH</h2>
+          <p>
+          <ol>
+            <li>
+              Design of the Game
+              <ol  style="list-style-type: disc">
+                <li>
+                  <strong>Interactive Narrative Development: </strong>
+                  The game was designed as a choice based digital narrative using Twine, focusing on emotionally
+                  authentic storytelling rather than explicit instruction. The narrative centered on undergraduate STEM
+                  students navigating self doubt within a research lab environment.
+                </li>
+                <li>
+                  <strong>Multiple Story Versions for Controlled Comparison: </strong>
+                  Three versions of the game were created to isolate design factors: an interactive story from the
+                  perspective of a character currently experiencing imposter syndrome, a linear version without choices,
+                  and an interactive story from the perspective of a character who had already overcome imposter
+                  syndrome.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Data Collection
+              <ol  style="list-style-type: disc">
+                <li>
+                  <strong>Participant Recruitment and Assignment: </strong>
+                  Undergraduate STEM students were recruited and randomly assigned to one of the three story conditions
+                  to ensure balanced comparison across groups.
+                </li>
+                <li>
+                  <strong>Post Gameplay Survey Measures: </strong>
+                  After completing the story, participants responded to a survey measuring engagement, mood change,
+                  character relatability, awareness of imposter syndrome, and intent to communicate about their
+                  experiences.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Data Analysis
+              <ol  style="list-style-type: disc">
+                <li>
+                  <strong>Quantitative Analysis of Survey Responses: </strong>
+                  Statistical analyses were conducted to compare engagement, mood, and learning outcomes across
+                  conditions and to identify relationships between relatability and engagement.
+                </li>
+                <li>
+                  <strong>Qualitative Thematic Analysis: </strong>
+                  Open ended responses were analyzed using thematic analysis to identify recurring emotional, cognitive,
+                  and experiential patterns in participants’ reflections.
+                </li>
+              </ol>
+            </li>
+          </ol>
+
+          </p>
+        </div>
+        <div class="project-section" id="research-findings">
+          <h2>RESEARCH FINDINGS</h2>
+          <ol>
+            <li>
+              Effects of the Story on Mood and Awareness
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Increased Awareness of Shared Experience: </strong>
+                  Participants recognized imposter syndrome as a common experience rather than a personal failure. This
+                  awareness reduced feelings of isolation and helped reframe self doubt as socially shared.
+                </li>
+                <li>
+                  <strong>Mood Improvement Through Emotional Validation: </strong>
+                  Positive changes in mood were driven by emotional validation rather than novelty or entertainment.
+                  Seeing internal thoughts reflected in the character helped participants feel understood.
+                </li>
+                <li>
+                  <strong>Limited Impact Without New Awareness: </strong>
+                  Participants who reported no change in mood often stated that the story did not provide new insight.
+                  Without meaningful recognition, emotional benefits were reduced.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Role of Learning and Reflection
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Learning Through Narrative Recognition: </strong>
+                  Participants learned by recognizing familiar thought patterns in the story rather than through
+                  explicit instruction. This reflective learning supported deeper understanding.
+                </li>
+                <li>
+                  <strong>Externalization Enabled Safe Self Reflection: </strong>
+                  Observing imposter thoughts through a fictional character allowed participants to reflect at a
+                  psychological distance, supporting emotional processing.
+                </li>
+                <li>
+                  <strong>Reflection Influenced by Prior Experience: </strong>
+                  Participants with stronger personal experiences of imposter syndrome engaged more deeply in
+                  reflection, shaping the story’s impact.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Interactivity and Autonomy
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Interactivity Did Not Alter Outcomes: </strong>
+                  The presence or absence of choice did not significantly affect engagement, mood, or learning outcomes
+                  across story versions.
+                </li>
+                <li>
+                  <strong>Autonomy Was Not a Primary Driver: </strong>
+                  Although choice is often associated with autonomy, participants did not report agency as a major
+                  contributor to impact in this context.
+                </li>
+                <li>
+                  <strong>Narrative Content Outweighed Mechanics: </strong>
+                  Participants focused more on emotional meaning and story content than on interaction mechanics or
+                  control.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Character Relatability and Relatedness
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Relatability Predicted Engagement: </strong>
+                  Participants who related to the character experiencing imposter syndrome showed significantly higher
+                  engagement than those who did not.
+                </li>
+                <li>
+                  <strong>Internal Experience Drove Relatability: </strong>
+                  Relatability emerged from internal dialogue, insecurity, and fear of inadequacy rather than
+                  demographic similarity.
+                </li>
+                <li>
+                  <strong>Relatedness Achieved Without Social Interaction: </strong>
+                  Even in a single player experience, perspective taking and emotional authenticity enabled feelings of
+                  connection.
+                </li>
+              </ol>
+            </li>
+          </ol>
+
+
+
+
+
+          <!-- <p>
+          <ol>
+            <li>Participants</li>
+           <p> A total of 107 undergraduate STEM students participated in the study. Participants were primarily early
+            undergraduates with a strong interest in academic research environments, closely aligning with the narrative
+            context of the story. Participants were randomly assigned to one of three conditions: ,<b>an interactive story
+            from the perspective of a character currently experiencing imposter syndrome, a linear version of the same
+            story, or an interactive story from the perspective of a character who had previously overcome imposter
+            syndrome.</b> </p>
+
+            <li>Prior Experience with Imposter Syndrome</li>
+              <ol>
+                <li><b>Awareness and Prevalence: </b>Most participants reported being familiar with the term imposter
+                  syndrome prior to the study. A large majority met the threshold for experiencing imposter syndrome
+                  based on the Young Imposter Syndrome scale, with many indicating that they were currently experiencing
+                  it. There were no significant differences between experimental groups in terms of prior awareness or
+                  prevalence, indicating that randomization was successful.</li>
+
+                <li><b>Intensity of Experience: </b>Participants who reported experiencing imposter syndrome described
+                  moderate to high intensity levels. These intensity ratings did not differ significantly across the
+                  three story versions. Most participants also believed that imposter syndrome was common among their
+                  peers, suggesting an existing but largely unspoken shared experience.</li>
+              </ol>
+
+            <li>Experience with the Story
+              <ol>
+                <li><b>Engagement: </b>Across all three versions of the story, participants reported moderate to high
+                  engagement. Statistical analysis revealed no significant differences in engagement between interactive
+                  and linear versions or between character perspectives. However, participants who reported having
+                  personal experience with imposter syndrome showed slightly higher engagement overall.</li>
+
+                <li><b>Character Relatability: </b>Participants consistently rated the character currently experiencing
+                  imposter syndrome as more relatable than the character who had already overcome it. This pattern held
+                  across all conditions. Qualitative responses showed that relatability stemmed primarily from internal
+                  thoughts, self doubt, comparison to others, and fear of inadequacy rather than demographic similarity.
+                  Importantly, higher relatability ratings for the character with imposter syndrome strongly predicted
+                  higher engagement, while relatability of the less vulnerable character did not.</li>
+              </ol>
+
+            <li>Impact of the Story
+              <ol>
+                <li><b>Change in Mood: </b>More than half of participants reported feeling better after reading the
+                  story, while others reported no change or a slight negative shift. There were no significant
+                  differences in mood change across the three versions. Qualitative analysis revealed that positive mood
+                  changes were most often attributed to realizing that others share similar struggles. Negative mood
+                  changes were typically associated with the story resurfacing difficult personal memories.</li>
+
+                <li><b>Intent to Communicate About Imposter Syndrome: </b>Over half of participants indicated an
+                  increased intention to talk to someone about imposter syndrome after reading the story. While this
+                  intent did not differ significantly across conditions, participants who experienced a positive mood
+                  change were significantly more likely to report willingness to communicate about their experiences.</li>
+
+                <li><b>Story Endorsement: </b> Participants overwhelmingly endorsed the story as a valuable learning
+                  experience and indicated that they would recommend it to others. These endorsements were consistent
+                  across all three versions, suggesting that the story’s perceived value was robust to changes in
+                  interactivity and character perspective.</li>
+              </ol>
+          </ol>
+          </p> -->
+        </div>
+        <div class="project-section" id="next-steps">
+          <h2>DESIGN IMPLICATIONS</h2>
+          <p>
+          <ol>
+            <li>
+              Designing for Mood and Awareness
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Normalize Rather Than Diagnose: </strong>Designs addressing mental health should focus on
+                  normalizing experiences instead of labeling or diagnosing users. Presenting imposter syndrome as
+                  common and shared helped reduce isolation without triggering defensiveness.
+                </li>
+                <li>
+                  <strong>Make Emotional Validation an Explicit Goal: </strong>Mood improvement emerged when
+                  participants felt emotionally validated. Designers should intentionally craft moments where users feel
+                  seen and understood rather than surprised or entertained.
+                </li>
+                <li>
+                  <strong>Account for Emotional Sensitivity: </strong>Emotionally authentic narratives can resurface
+                  difficult memories. Designs should allow users to engage safely and avoid overly intense framing when
+                  working with lived experiences.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Designing for Learning and Reflection
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Enable Learning Through Recognition: </strong>Instead of direct instruction, learning occurred
+                  when participants recognized familiar thought patterns. Narrative mirroring helps users arrive at
+                  insights independently.
+                </li>
+                <li>
+                  <strong>Use Externalization to Support Reflection: </strong>Showing self doubt through a character
+                  allowed participants to reflect from a psychological distance. Indirect representation can be more
+                  effective than self focused prompts.
+                </li>
+                <li>
+                  <strong>Design for Varying Levels of Prior Experience: </strong> Participants with prior experience of
+                  imposter syndrome engaged more deeply. Designs should offer layered meaning rather than assume a
+                  uniform audience.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Designing Interactivity and Autonomy
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Do Not Assume Interactivity Equals Impact: </strong>The absence of significant differences
+                  between interactive and linear versions shows that choice alone does not guarantee engagement or
+                  learning.
+                </li>
+                <li>
+                  <strong>Use Interactivity to Support Meaning: </strong> When used, interactivity should reinforce
+                  emotional or narrative meaning rather than provide superficial control.
+                </li>
+                <li>
+                  <strong>Prioritize Narrative Coherence: </strong>Emotional coherence mattered more than branching
+                  complexity. Designers should favor clarity and continuity when addressing sensitive topics.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Designing for Relatability and Relatedness
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Design Characters Around Internal Experience: </strong>Relatability was driven by internal
+                  thoughts and emotions rather than demographic traits. Psychological realism is essential for
+                  connection.
+                </li>
+                <li>
+                  <strong>Use Perspective Taking to Foster Connection: </strong>Perspective taking enabled feelings of
+                  relatedness even in a single player experience through emotionally grounded storytelling.
+                </li>
+                <li>
+                  <strong>Support Private Relatedness: </strong>Feelings of connection do not require social
+                  participation. Private narrative experiences are especially valuable for stigmatized topics.
+                </li>
+              </ol>
+            </li>
+          </ol>
+
+          </p>
+        </div>
+        <div class="project-section" id="conclusions">
+          <h2>IMPACT & NEXT STEPS</h2>
+          <ol>
+            <li>
+              Impact of the Research
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Demonstrated Value of Narrative as a Mental Health Intervention: </strong>
+                  The study shows that emotionally grounded digital narratives can function as low barrier mental health
+                  interventions by validating lived experiences and reducing feelings of isolation.
+                </li>
+                <li>
+                  <strong>Challenged Assumptions About Interactivity in Design: </strong>
+                  Findings reveal that meaningful impact does not depend on choice based interactivity, shifting focus
+                  toward emotional authenticity and narrative quality.
+                </li>
+                <li>
+                  <strong>Provided Evidence for Scalable Institutional Use: </strong>
+                  Because the experience is self guided and lightweight, it can be deployed broadly within educational
+                  settings to support student well being without requiring significant resources.
+                </li>
+              </ol>
+            </li>
+
+            <li>
+              Next Steps
+              <ol style="list-style-type: disc">
+                <li>
+                  <strong>Evaluate Long Term Behavioral Outcomes: </strong>
+                  Future work should examine whether narrative experiences lead to sustained changes, such as increased
+                  help seeking, peer communication, or reduced imposter feelings over time.
+                </li>
+                <li>
+                  <strong>Expand to Other Populations and Contexts: </strong>
+                  The narrative framework can be adapted for different student populations, professional settings, or
+                  other mental health challenges beyond imposter syndrome.
+                </li>
+                <li>
+                  <strong>Explore Alternative Narrative Formats: </strong>
+                  Future studies could investigate audio, visual, or multimodal storytelling to understand how different
+                  narrative forms influence emotional impact and accessibility.
+                </li>
+              </ol>
+            </li>
+          </ol>
+
+        </div>
+
+      </section>
+
+      <aside class="project-toc-right">
+        <nav class="sticky-toc-nav">
+          <a href="#research-overview">RESEARCH OVERVIEW</a>
+          <a href="#research-questions">RESEARCH QUESTIONS</a>
+          <a href="#research-approach">MY RESEARCH APPROACH</a>
+          <a href="#research-findings">RESEARCH FINDINGS</a>
+          <a href="#next-steps">DESIGN IMPLICATIONS</a>
+          <a href="#conclusions">IMPACT & NEXT STEPS</a>
+        </nav>
+
+        <div class="sidebar-images">
+          <figure>
+            <img src="assets/images/peudo-narrative.png" alt="Related Project Visual 1">
+            <figcaption>Overview of passages for all three versions of Pseudo-Scientist.</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/images/peudo-narrative_2.png" alt="Mechanical model illustration">
+            <figcaption>Caption for mechanics diagram</figcaption>
+          </figure>
+
+          <figure>
+            <img src="assets/images/peudo-narrative_3.png" alt="PCA cluster visualization">
+            <figcaption>Excerpts from a version of the story</figcaption>
+          </figure>
+            <figure>
+            <img src="assets/images/IS_IN.png" alt="PCA cluster visualization">
+            <figcaption>Overview of story traversal in three versions</figcaption>
+          </figure>
+
+        </div>
+      </aside>
+
+    </main>
+    <footer id="contact" data-section="contact" class="footer">
+      <div class="footer-item">
+        <p>© 2025 by Shweta Sisodiya <br>
+          Best view in desktop<br>
+          Last updated Sept 2025</p>
+      </div>
+      <div class="footer-item">
+        <p style="text-align: center;"> <b>Contat Me:</b> <br>sksisodi@ucsc.edu <br>
+          +1-571-695-0503</p>
+      </div>
+      <!-- </div> -->
+      <div class="footer-right">
+        <a href="https://info.flagcounter.com/3NMB"><img
+            src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+            alt="Flag Counter" border="0"></a>
+      </div>
+    </footer>
+
+
+    <script src="assets/JS/home.js" defer></script>
+    <script src="assets/JS/script.js" defer></script>
+    <script src="assets/JS/work.js" defer></script>
+    <script>
+      function redirectToLink() {
+        window.open("https://sksisodi.github.io/about", "_blank"); // Redirects to the specified URL
+      }
+
+      function confirmWarning() {
+        var warningMessage = "⚠️ WARNING: This project is currently in progress. Please contact Shweta directly or proceed if you have code";
+
+        // The 'confirm()' function opens a dialog box with an OK and a Cancel button.
+        // It returns 'true' if the user clicks OK, and 'false' if they click Cancel.
+        var userConfirmation = confirm(warningMessage);
+      }
+    </script>
+
+</body>
+
+</html>

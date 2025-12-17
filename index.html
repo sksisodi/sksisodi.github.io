@@ -1,306 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shweta-Sisodiya-Portfolio</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/style_2.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600..700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shweta-Sisodiya-Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    /> -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
-      rel="stylesheet"
-    /> -->
-   <link 
-  href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Rubik:wght@700&display=swap" 
-  rel="stylesheet"
-/>       
-  </head>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style_2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600..700&display=swap" rel="stylesheet" />
 
-  <body>
-    <div class="main">
-      <div class="nav-bar">
-        <a class="link" href="index.html"><div class="nav-left">
-            <img src="./assets/images/Icon.png" alt="logo" />
-            <h1>Shweta</h1>
-          </div></a>
-        <img src="./assets/images/hamburger.png" alt="" class="ham-icon" />
-        <div class="nav-right-alt">
-          <div class="menu-bar-alt">
-            <div class="btn-container-alt">
-              <a href="about.html"><button id="about">About</button></a>
-              <a href="work.html"><button>Work</button></a>
-              <a href="contact.html"><button>Contact</button></a>
-              <a href="publications.html"><button>Publications</button></a>
-            </div>
-            <div class="link-container-alt">
-              <ul>
-                <!-- <li>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <div class="nav-bar">
+      <a class="link" href="index.html">
+        <div class="nav-left">
+          <img src="./assets/images/Icon.png" alt="logo" />
+          <h1>Shweta Sisodiya</h1>
+        </div>
+      </a>
+      <img src="./assets/images/hamburger.png" alt="" class="ham-icon" />
+      <div class="nav-right-alt">
+        <div class="menu-bar-alt">
+          <div class="btn-container-alt">
+            <a href="about.html"><button id="about">About</button></a>
+            <a href="work.html"><button>Portfolio</button></a>
+            <a href="contact.html"><button>Contact</button></a>
+            <a href="publications.html"><button>Paper</button></a>
+          </div>
+          <div class="link-container-alt">
+            <ul>
+              <!-- <li>
                   <a href="twitter.html"
                     ><img src="./assets/images/twitter.png" alt=""
                   /></a>
                 </li> -->
-                <li>
-                  <a href="https://www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
+              <li>
+                <a href="https://www.linkedin.com/in/sksisodig"><img src="./assets/images/linkedin.png" alt="" /></a>
               </li>
               <li>
-                  <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
+                <a href="https://github.com/sksisodi"><img src="./assets/images/github.png" alt="" /></a>
               </li>
               <li>
-                  <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img src="./assets/images/scholar.png" alt="" /></a>
+                <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en"><img
+                    src="./assets/images/scholar.png" alt="" /></a>
               </li>
-              </ul>
-            </div>
+            </ul>
           </div>
-        </div>
-
-        <div class="nav-right">
-          <div class="btn-container">
-            <img src="./assets/images/star_white.png" alt="" class="star" />
-            <button id="homeBtn" onclick="scrollToSection('home')" class="nav-btn">Home</button>
-            <img src="./assets/images/star_white.png" alt="" class="star" />
-            <button id="workBtn" onclick="scrollToSection('work')" class="nav-btn">Work</button>
-            <button id="publicationsBtn" onclick="scrollToSection('publications')" class="nav-btn">Publications</button>
-            <button id="aboutBtn" class="nav-btn" onclick="redirectToLink()">About</button>
-            <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
-
-          </div>
-          <!-- <div class="link-container">
-            <ul>
-                <li>
-                  <a href="twitter.html"
-                    ><img src="./assets/images/twitter.png" alt=""
-                  /></a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/sksisodig/" class="angled-box"><img src="./assets/images/linkedin.png" style="height: 23px;" alt="Linkedin" /></a>
-              </li>
-              <li>
-                  <a href="https://github.com/sksisodi" class="angled-box"><img src="./assets/images/github.png" alt="github" /></a>
-              </li>
-              <li>
-                  <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="angled-box" ><img src="./assets/images/scholar.png" alt="Google scholar" /></a>
-              </li>
-              <li>
-                  <a href="assets/pdf/Shweta's%20Resume.pdf" class="impact-figure-item resume-button" target="_blank">
-                      <h2 class="impact-number">Resume</h2>
-                  </a>
-              </li>
-              </ul>
-          </div> -->
         </div>
       </div>
 
-      <main class="main-section">
-        <header data-section="home" class="hero-section">
-          <div class="hero-left">
-            <p>Hello, I'm</p>
-            <div class="shweta">
+      <div class="nav-right">
+        <div class="btn-container">
+          <button id="homeBtn" onclick="navigateToPage('index.html')" class="nav-btn">Home</button>
+          <button id="workBtn" onclick="scrollToSection('work')" class="nav-btn">Portfolio</button>
+          <button id="publicationsBtn" onclick="scrollToSection('publications')" class="nav-btn">Papers</button>
+          <button id="aboutBtn" class="nav-btn" onclick="redirectToLink()">About</button>
+          <!-- <button  id = "aboutBtn" class="nav-btn"><a href="https://www.interactiondynamicslab.com/shweta" target="_blank"> About </a></button> -->
+
+        </div>
+      </div>
+    </div>
+
+    <main class="main-section">
+      <header data-section="home" class="hero-section">
+        <div class="hero-left">
+          <p>Hello, I'm</p>
+          <div class="shweta">
             <h1 style="margin-top: -7px; margin-left: 25px;">Shweta</h1>
             <!-- <img id="img1" src="./assets/images/start_brown.png" alt=""/> 
             <img id="img2" src="./assets/images/start_brown.png" alt=""/> -->
-            </div >
-            <p id="typewriter" style="margin-top: -45px; margin-left: 50px; font-weight: 750;">
-              a Mixed-Method Researcher.
-            </p>
+          </div>
+          <p id="typewriter" style="margin-top: -45px; margin-left: 50px; font-weight: 750;">
+            a Mixed-Method Researcher.
+          </p>
 
-            <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;">
-              Formerly @ 
-              <span style="font-size: 15pt; font-weight: 800; color: #1e453e;">
-                Honda Research, Stanford, Accenture
-              </span>
-            </p>
-            <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;"> I am a PhD student in the Interaction Dynamics Lab at the University of California, Santa Cruz, where I am supervised by <a style="color: #685555;" href="https://www.elincarstensdottir.com/"><u>Dr. Elin Carsentdorrit</u></a>.</p>
-            <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;"> My research focuses on designing with purpose. I tackle <b>real-world problems</b> through <b>user stories</b> and <b>AI</b> to shape the next generation of products.</p> 
-            <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;">
-            Let's connect! <a style="color: #685555;"  href="mailto:sksisodi@ucsc.edu"> <u>Email me</u> </a>  or <a style="color: #685555;" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1N_LLogRkjWT4wIThhhNry7U6oED7XzDqpd_yiNGAbOq3p8nQu7LQOAPk3haQIMLvng4AYu0Iz?gv=true" target="_blank"><u>book an appointment</u></a>.
-            </p>
-            <div class="link-container">
-              <ul>
-                <!-- <li>
+          <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;">
+            Formerly @
+            <span style="font-size: 15pt; font-weight: 800; color: #1e453e;">
+              Honda Research, Stanford, Accenture
+            </span>
+          </p>
+          <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;"> I am a PhD student at the University of
+            California, Santa Cruz, where I am supervised by <a style="color: #685555;"
+              href="https://www.elincarstensdottir.com/"><u>Dr. Elin Carsentdorrit</u></a>.</p>
+          <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;"> I am passionate about creating products
+            that genuinely serve people, <b>solutions that become part of their everyday lives </b>. If this resonates
+            with you, let’s connect!</p>
+          <p style="margin-top: 10px; margin-left: 30px; font-size : 13pt;">
+            Let's connect! <a style="color: #685555;" href="mailto:sksisodi@ucsc.edu"> <u>Email me</u> </a> or <a
+              style="color: #685555;"
+              href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1N_LLogRkjWT4wIThhhNry7U6oED7XzDqpd_yiNGAbOq3p8nQu7LQOAPk3haQIMLvng4AYu0Iz?gv=true"
+              target="_blank"><u>book an appointment</u></a>.
+          </p>
+          <div class="link-container">
+            <ul>
+              <!-- <li>
                   <a href="twitter.html"
                     ><img src="./assets/images/twitter.png" alt=""
                   /></a>
                 </li> -->
-                <li>
-                  <a href="https://www.linkedin.com/in/sksisodig/" class="angled-box"><img src="./assets/images/linkedin.png" style="height: 23px;" alt="Linkedin" /></a>
+              <li>
+                <a href="https://www.linkedin.com/in/sksisodig/" class="angled-box"><img
+                    src="./assets/images/linkedin.png" style="height: 23px;" alt="Linkedin" /></a>
               </li>
               <li>
-                  <a href="https://github.com/sksisodi" class="angled-box"><img src="./assets/images/github.png" alt="github" /></a>
+                <a href="https://github.com/sksisodi" class="angled-box"><img src="./assets/images/github.png"
+                    alt="github" /></a>
               </li>
               <li>
-                  <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="angled-box" ><img src="./assets/images/scholar.png" alt="Google scholar" /></a>
+                <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="angled-box"><img
+                    src="./assets/images/scholar.png" alt="Google scholar" /></a>
               </li>
               <li>
-                  <!-- <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="angled-box" ><img src="./assets/images/resume.png" alt="Google scholar" style="height: 20px; width: 65px;"/></a> -->
-                  <a href="assets/pdf/Shweta's%20Resume.pdf" class="impact-figure-item resume-button" target="_blank">
-                      <h2 class="impact-number">Resume</h2>
-                  </a>
+                <!-- <a href="https://scholar.google.com/citations?user=FoASt0sAAAAJ&hl=en" class="angled-box" ><img src="./assets/images/resume.png" alt="Google scholar" style="height: 20px; width: 65px;"/></a> -->
+                <a href="assets/pdf/Shweta's%20Resume.pdf" class="impact-figure-item resume-button" target="_blank">
+                  <h2 class="impact-number">Resume</h2>
+                </a>
               </li>
               </li>
-              </ul>
-            </div>
+            </ul>
           </div>
-          <div class="hero-right">
-            <img src="./assets/images/girl.png" alt="a girl" />
-          </div>
-          <!-- <div id="publications"  data-section="publications" class="publication-section">
+        </div>
+        <div class="hero-right">
+          <img src="./assets/images/girl.png" alt="a girl" />
+        </div>
+        <!-- <div id="publications"  data-section="publications" class="publication-section">
             <img id="collab" style="height: 100px;" src="./assets/images/Collabs.png" alt=""/> 
           </div> -->
-        </header>
+      </header>
 
-        <!-- <div id="news" data-section="news" class="news-section"> -->
-          <div class="impact-figures-section">
-                <div class="impact-figures-container">
-                    
-                    <div class="impact-figure-item">
-                        <h2 class="impact-number">9+</h2>
-                        <p class="impact-text">Strategic Research Projects</p>
-                    </div>
+      <!-- <div id="news" data-section="news" class="news-section"> -->
+      <div class="impact-figures-section">
+        <div class="impact-figures-container">
 
-                    <div class="impact-figure-item">
-                        <h2 class="impact-number">7+</h2>
-                        <p class="impact-text">Cross-Functional Teams</p>
-                    </div>
-
-                    <div class="impact-figure-item">
-                        <h2 class="impact-number">5+</h2>
-                        <p class="impact-text">Tier-1 Academic Publications</p>
-                    </div>
-
-                    <div class="impact-figure-item">
-                        <h2 class="impact-number">100 M+</h2>
-                        <p class="impact-text">Data Points Analyzed</p>
-                    </div>
-
-                    <div class="impact-figure-item">
-                        <h2 class="impact-number">25+</h2>
-                        <p class="impact-text">UX Research Studies</p>
-                    </div>
-
-                </div>
-            </div>
-            <!-- <img id="collab" style="height: 275px; margin-top: 25px;" src="./assets/images/Collabs.png" alt=""/>  -->
-        <!-- </div> -->
-
-        <div id="work" data-section="work" class="work-section">
-          <h2>AI Passion Projects</h2>
-
-          <p>COMING SOON ...........</p>
-
-
-
-
-
+          <div class="impact-figure-item">
+            <h2 class="impact-number">9+</h2>
+            <p class="impact-text">Strategic Research Projects</p>
           </div>
-         
 
-        <div id="work" data-section="work" class="work-section">
-          <h2>Research Work</h2>
-          <p style="margin-top:-25px;"> Feel free to browse through my latest work, and if something piques your interest, let’s chat—I’d love to hear your thoughts!
-          </p>
-          <div class="work-container">
-            <div class="work-container-left">              
+          <div class="impact-figure-item">
+            <h2 class="impact-number">7+</h2>
+            <p class="impact-text">Cross-Functional Teams</p>
+          </div>
+
+          <div class="impact-figure-item">
+            <h2 class="impact-number">5+</h2>
+            <p class="impact-text">Tier-1 Academic Publications</p>
+          </div>
+
+          <div class="impact-figure-item">
+            <h2 class="impact-number">100 M+</h2>
+            <p class="impact-text">Data Points Analyzed</p>
+          </div>
+
+          <div class="impact-figure-item">
+            <h2 class="impact-number">25+</h2>
+            <p class="impact-text">UX Research Studies</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- <img id="collab" style="height: 275px; margin-top: 25px;" src="./assets/images/Collabs.png" alt=""/>  -->
+      <!-- </div> -->
+
+      <div id="work" data-section="work" class="work-section">
+        <h2>AI Passion Projects</h2>
+        <div class="work-container">
+          <!-- Container Left-->
+          <div class="work-container-left">
+            <div class="work-item" id="storyland">
+              <div class="work-details">
+                <h3>Bibloplan : PERSONALIZED INTELLIGENT READING CURATOR</h3><a style="color: black;"
+                  href="bibloplan.html">
+                  <p style="color: #e2725b; font-weight: 700;">COMING SOON IN JAN</p>
+                  <p>
+                    A sophisticated, full-stack, serverless AI platform deployed on <b>Google Cloud Run</b> and <b>the
+                      Gemini API</b> to
+                    proactively filter, summarize, and deliver a personalized reading plan daily. The system is complete
+                    with an interactive dashboard that provides pattern analysis and analytics for data-driven tracking
+                    of user goals.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Container Middle-->
+
+          <!-- <div class="work-container-left">
               <div class="work-item" id="PDCS">
-                <!-- <div class="work-item-img-container">
-                  <img
-                    src="./assets/images/PDCS_5.png"
-                    alt="PDCS", style="height: 150px;" class="soft-glow-image"
-                  />
-                </div> -->
-                <div class="work-details" id="PDCS">
-                  <h2>
-                    PDCS: Empathy in Methology
-                  </h2>
+                <div class="work-details">
+                  <h3>Empathy in Methodology</h3><a style="color: black;" href="method.html">
                   <p style="color: #e2725b; font-weight: 700;">ToCHI'26 & CHI'26 </p>
                   <p>
-                    PDCS is novel HCI user research proposed to empathize and understand user needs to design products that truely address commities's real needs. <br><br>
-                    Check the <a style="color: #e2725b; font-weight: 700;" href="assets/pdf/Persona Driven Collaborative Storytelling.pdf" target="_blank">Slide Deck</a> to learn more !
-                  </p>
-                  
-                </div>
-              </div>
+                    A novel HCI user experimental research study to empathize and understand user needs to design needs.
+                  </p></a>
+                </div></div></div> -->
 
-              <div class="work-item" id="PDCS1">
-                  <!-- <div class="work-item-img-container">
-                    <img
-                      src="./assets/images/PDCS_1_1.jpg"
-                      alt="Game Mechanics", class="soft-glow-image"
-                    />
-                  </div> -->
-                  <div class="work-details" id="PDCS1">
-                    <h2>
-                      Beyond Design: Lives of International Students
-                    </h2>
-                    <p style="color: #e2725b; font-weight: 700;">TOCHI'26</p>
-                    <p>
-                      An open-ended investigation into broad challenges indian international students face during their transition to the U.S. <br><br> 
-                       Check the <a style="color: #e2725b; font-weight: 700;" href="assets/pdf/Persona Driven Collaborative Storytelling.pdf", target="_blank">Slide Deck</a> to learn more!
-                    </p>
-                  </div>
-                </div>
-
-              
-              </div>
-            <div class="work-container-right">
-              <div class="work-item" id="PDCS2">
-                <!-- <div class="work-item-img-container">
-                  <img
-                    src="./assets/images/PDCS_3.jpg"
-                    alt="PDCS" class="soft-glow-image"
-                  />
-                </div> -->
-                <div class="work-details" id="PDCS2">
-                  <h2>
-                    How international student uses LLMs
-                  </h2>
-                  <p style="color: #e2725b; font-weight: 700;">In-progress</p>
+          <!-- Container Right-->
+          <div class="work-container-left">
+            <div class="work-item" id="PDCS">
+              <div class="work-details">
+                <h3>Storyland: A Bedtime Story Generator</h3><a style="color: black;" href="Storyland.html">
+                  <p style="color: #e2725b; font-weight: 700;"> Complete</p>
                   <p>
-                    PDCS is novel HCI user research proposed to empathize and understand user needs to design products that truely address commities's real needs. <br><br>
-                    Check the <a style="color: #e2725b; font-weight: 700;" confirmWarning()">Slide Deck </a> to learn more !
+                    A AI-driven storytelling framework designed to craft, evaluate, and refine bedtime stories for
+                    children aged 5–10.
                   </p>
-                  
-                </div>
-              </div>
-              <div class="work-item" id="gamemech" >
-                <!-- <div class="work-item-img-container">
-                  <img
-                    src="./assets/images/GM1.png"
-                    alt="Game Mechanics" class="soft-glow-image"
-                  />
-                </div> -->
-                <div class="work-details" id="gamemech">
-                  <h2>
-                  What is a Game Mechanics?
-                  </h2>
-                  <p style="color: #e2725b; font-weight: 700;"> In-Progress</p>
-                  <p>
-                    The project explores application of cluster analysis to
-                    qualitative data, bridging the gap between quantitative and
-                    qualitative methodologies. <br><br>
-                    Check the <a style="color: #e2725b; font-weight: 700;" href="assets/pdf/Game Mechanics.pdf" target="_blank">Slide Deck</a> to learn more !
-                  </p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
-                      <!-- <a href="" class="impact-figure-item resume-button" target="_blank">
-                      <h2 class="impact-number" style="width: 100%;;">More projects</h2>
-                  </a> -->
         </div>
+
+
+
+
+
+      </div>
+
+
+      <div id="work" data-section="work" class="work-section">
+        <div id="work" data-section="work" class="work-section">
+          <h2>Research Portfolio</h2>
+
+          <div class="work-container">
+            <div class="work-container-left">
+              <div class="work-item" id="PDCS">
+                <div class="work-details">
+                  <h3>Human-Centered Research for Social Robotics</h3><a style="color: black; cursor: pointer;"
+                    onclick="protectedLink(event, 'HRI.html')">
+                    <p style="color: #e2725b; font-weight: 700;">Internship </p>
+                    <p>
+                      Understanding crowd navigation behavior inform the development of socially aware robotic systems.
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="work-item" id="ADHD">
+                <div class="work-details"><a style="color: black;" href="ADHD.html">
+                    <h3>Assistive Tech for Neurodivergent People</h3>
+                    <p style="color: #e2725b; font-weight: 700;">In-review at CSCW'26</p>
+                    <p>
+
+                      Multi-stage mixed-method study on backgroud media agents as assistive technology.
+
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Middle Container-->
+            <div class="work-container-middle">
+
+              <div class="work-item" id="PDCS1">
+                <div class="work-details">
+                  <h3>Beyond Design: Lives of International Students</h3><a style="color: black;" href="IIS.html">
+                    <p style="color: #e2725b; font-weight: 700;">TOCHI'26</p>
+                    <p>
+                      Qualitative exploration of challenges faced by international students in the U.S.
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-item" id="gamemech">
+                <div class="work-details"><a style="color: black;" href="mechanics.html">
+                    <h3>What is a Game Mechanics?</h3>
+                    <p style="color: #e2725b; font-weight: 700;"> Paper writing in-progress</p>
+                    <p>
+                      Mixed-method (thematic analysis and clustering) approach to study the discourse around "Game
+                      Mechanics".
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="work-container-right">
+              <div class="work-item" id="IIS_LLM">
+                <div class="work-details"><a style="color: black;" href="IIS_LLM.html">
+                    <h3>How international student uses LLMs?</h3>
+                    <p style="color: #e2725b; font-weight: 700;">In-progress</p>
+                    <p>
+                      Experimental study on LLM adoption among international students.
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="work-item" id="pesudo_narrative">
+                <div class="work-details"><a style="color: black;" href="pesudo_narrative.html">
+                    <h3>Narrative Interventions for Imposter Syndrome</h3>
+                    <p style="color: #e2725b; font-weight: 700;">CHIPLAY'24</p>
+                    <p>
+                      Desiging and evaluating Interactive digital storytelling games as scalable educational
+                      interventions.
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
 
         <!-- <div id="personalproject" data-section="personproject" class="work-section">
           <h2>Personal Project I am working on</h2>
@@ -310,70 +327,94 @@
           <h2>Games that I made</h2>
 
           <div class="impact-figures-section">
-                <div class="impact-figures-container">
-                    <div class="impact-figure-item"> <a href="https://sksisodi.github.io/anya/" target="_blank">
-                        <img src="assets/images/G3.png" style="height: 150px;"/>
-                        <h2 class="impact-text" style="font-size: 32px; color: #e2725b;">Anya</h2> </a>
-                    </div>
-                    <div class="impact-figure-item">
-                        <img src="assets/images/alchemist_stone.png" style="height: 150px;"/>
-                        <h2 class="impact-text" style="font-size: 32px; color: #e2725b;">Alchemist</h2>
-                    </div>
+            <div class="impact-figures-container">
+              <div class="impact-figure-item"> <a href="https://sksisodi.github.io/anya/" target="_blank">
+                  <img src="assets/images/G3.png" style="height: 150px;" />
+                  <h2 class="impact-text" style="font-size: 32px; color: #e2725b;">Anya</h2>
+                </a>
+              </div>
+              <div class="impact-figure-item">
+                <img src="assets/images/alchemist_stone.png" style="height: 150px;" />
+                <h2 class="impact-text" style="font-size: 32px; color: #e2725b;">Alchemist</h2>
+              </div>
 
-                    <div class="impact-figure-item">
-                         <img src="assets/images/shibu.png"style="height: 150px;"/>
-                        <h2 class="impact-text"style="font-size: 32px; color: #e2725b;">Shibu</h2>
-                    </div>
+              <div class="impact-figure-item">
+                <img src="assets/images/shibu.png" style="height: 150px;" />
+                <h2 class="impact-text" style="font-size: 32px; color: #e2725b;">Shibu</h2>
+              </div>
 
-                    <div class="impact-figure-item">
-                        <img src="assets/images/Resilience.jpg"style="height: 150px;"/>
-                        <h2 class="impact-text" style="font-size: 32px; color: #e2725b;">The LUX</h2>
-                    </div>
+              <div class="impact-figure-item">
+                <img src="assets/images/Resilience.jpg" style="height: 150px;" />
+                <h2 class="impact-text" style="font-size: 32px; color: #e2725b;">The LUX</h2>
+              </div>
 
-                </div>
             </div>
-
           </div>
 
-        <div id="publications"  data-section="publications" class="publication-section">
+        </div>
+
+        <div id="publications" data-section="publications" class="publication-section">
           <h1>Research Publications</h1>
           <ul>
             <li>
-              <h2>
+              <h3 style="color: #666;">
+                Background Media: Colloquial Assistive Technology for Neurodivergent People (In-review)
+              </h3>
+              <p>
+                Venue :ACM Conference on Computer‑Supported Cooperative Work and Social Computing 2026 (Full-paper)
+              </p>
+            </li>
+            <li>
+              <h3 style="color: #666;">
+                Beyond Usability: Mapping LLM’s Role as a Mediator of Socio-Cultural Adaptation (In-review)
+              </h3>
+              <p>
+                Venue : The Annual Symposium on Computer-Human Interaction 2026 (Full-paper)
+              </p>
+            </li>
+            <li>
+              <h3 style="color: #666;">
+                Participatory Information Gathering for International Student Communities (In-review)
+              </h3>
+              <p>
+                Venue : ACM CHI Conference on Human Factors in Computing Systems 2026 (Full-paper)
+              </p>
+            </li>
+            <li>
+              <h3>
                 Pseudo-Scientist: Towards Narrative Interventions for Imposter
                 Syndrome
-              </h2>
+              </h3>
               <p>
                 Venue : The Annual Symposium on Computer-Human Interaction in
                 Play (CHI PLAY) 2024 (Full-paper)
               </p>
             </li>
             <li>
-              <h2>Interactive Narratives for Imposter Syndrome</h2>
+              <h3>Interactive Narratives for Imposter Syndrome</h3>
               <p>
-                Venue : The Annual Symposium on Computer-Human Interaction in
-                Play (CHI PLAY) 2024 (Full-paper)
+                Venue : ACM CHI Conference on Human Factors in Computing Systems 2024 (Full-paper)
               </p>
             </li>
             <li>
-              <h2>
+              <h3>
                 Under Pressure: A Multi-Modal Analysis of Induced Stressors in
                 Games for Resilience
-              </h2>
+              </h3>
               <p>
                 Venue : International Conference on the Foundations of Digital
                 Games 2023 (Full-paper)
               </p>
             </li>
             <li>
-              <h2>Gender, Cultures, and Communication</h2>
+              <h3>Gender, Cultures, and Communication</h3>
               <p>Venue : ACM CHI 2022 (Workshop)</p>
             </li>
             <li>
-              <h2>
+              <h3>
                 A Data-driven Design of AR Alternate Reality Games to Measure
                 Resilience
-              </h2>
+              </h3>
               <p>
                 A Data-driven Design of AR Alternate Reality Games to Measure
                 Resilience
@@ -384,40 +425,46 @@
 
 
       </div>
+  </div>
+  </div>
 
-      <footer id="contact" data-section="contact" class="footer">
-        <div class="footer-item">
-            <p>© 2025 by Shweta Sisodiya <br> 
-            Best view in desktop<br> 
-            Last updated Sept 2025</p></div>
-          <div class="footer-item">
-            <h2>Contat Me:</h2>
-            <p>sksisodi@ucsc.edu <br>
-              +1-571-695-0503</p>
-          </div> 
-            </div>
-            <div class="footer-right">
-            <a href="https://info.flagcounter.com/3NMB"><img src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a></div>
-          </div>
-        </div>
-      </footer>
-    </main>
 
-    <script src="assets/JS/home.js" defer></script>
-    <script src="assets/JS/script.js" defer></script>
-    <script src="assets/JS/work.js" defer></script>
-    <script>
-      function redirectToLink() {
-        window.open("https://sksisodi.github.io/about", "_blank"); // Redirects to the specified URL
-      }
-      
-        function confirmWarning() {
-            var warningMessage = "⚠️ WARNING: This project is currently in progress. Please contact Shweta directly or proceed if you have code";
-            
-            // The 'confirm()' function opens a dialog box with an OK and a Cancel button.
-            // It returns 'true' if the user clicks OK, and 'false' if they click Cancel.
-            var userConfirmation = confirm(warningMessage);
-        }
-    </script>
-  </body>
+  </main>
+  <footer id="contact" data-section="contact" class="footer">
+    <div class="footer-item">
+      <p>© 2025 by Shweta Sisodiya <br>
+        Best view in desktop<br>
+        Last updated Sept 2025</p>
+    </div>
+    <div class="footer-item">
+      <p style="text-align: center;"> <b>Contat Me:</b> <br>sksisodi@ucsc.edu <br>
+        +1-571-695-0503</p>
+    </div>
+    <!-- </div> -->
+    <div class="footer-right">
+      <a href="https://info.flagcounter.com/3NMB"><img
+          src="https://s01.flagcounter.com/count2/3NMB/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/"
+          alt="Flag Counter" border="0"></a>
+    </div>
+  </footer>
+
+
+  <script src="assets/JS/home.js" defer></script>
+  <script src="assets/JS/script.js" defer></script>
+  <script src="assets/JS/work.js" defer></script>
+  <script>
+    function redirectToLink() {
+      window.open("about.html", "_blank"); // Redirects to the specified URL
+    }
+
+    function confirmWarning() {
+      var warningMessage = "⚠️ WARNING: This project is currently in progress. Please contact Shweta directly or proceed if you have code";
+
+      // The 'confirm()' function opens a dialog box with an OK and a Cancel button.
+      // It returns 'true' if the user clicks OK, and 'false' if they click Cancel.
+      var userConfirmation = confirm(warningMessage);
+    }
+  </script>
+</body>
+
 </html>

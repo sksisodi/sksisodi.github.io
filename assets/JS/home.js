@@ -27,6 +27,36 @@ function scrollToSection(sectionId) {
   }
 }
 
+function goHome() {
+    window.location.href = 'index.html';
+}
+
+function goPortfolio() {
+    window.location.href = 'index.html#work';
+}
+
+function goPapers() {
+    window.location.href = 'index.html#publications';
+}
+
+function goAbout() {
+    window.location.href = 'about.html';
+}
+
+function protectedLink(event, url) {
+    // Prevents the browser from following the link immediately
+    event.preventDefault();
+
+    const correctCode = "HRI2023"; // <--- SET YOUR CODE HERE
+    const userCode = prompt("This project is under NDA. Please enter the access code to view:");
+
+    if (userCode === correctCode) {
+        window.location.href = url; // Opens the page if code is right
+    } else if (userCode !== null) {
+        alert("Incorrect code. Please contact me for access.");
+    }
+}
+
 // window.addEventListener("DOMContentLoaded", () => {
 //   const urlParams = new URLSearchParams(window.location.search);
 //   const sectionId = urlParams.get("section");
@@ -45,7 +75,7 @@ function scrollToSection(sectionId) {
 
 // document.getElementById("shibu").addEventListener("click", function() {
 //   window.location.href = "shibu.html";
-// });
+// }):
 
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("[data-section]");
@@ -71,14 +101,14 @@ document.addEventListener("DOMContentLoaded", () => {
     if (activeButton) {
       activeButton.classList.add("active");
 
-      // Move stars around the active button
-      const btnContainer = activeButton.parentNode;
-      const stars = document.querySelectorAll(".star");
-      stars.forEach((star) => star.remove());
+      // // Move stars around the active button
+      // const btnContainer = activeButton.parentNode;
+      // const stars = document.querySelectorAll(".star");
+      // stars.forEach((star) => star.remove());
 
-      const starHTML = `<img src="./assets/images/star_white.png" alt="" class="star" />`;
-      activeButton.insertAdjacentHTML("beforebegin", starHTML);
-      activeButton.insertAdjacentHTML("afterend", starHTML);
+      // const starHTML = `<img src="./assets/images/star_white.png" alt="" class="star" />`;
+      // activeButton.insertAdjacentHTML("beforebegin", starHTML);
+      // activeButton.insertAdjacentHTML("afterend", starHTML);
     }
   }
 });

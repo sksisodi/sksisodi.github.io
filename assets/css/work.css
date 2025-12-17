@@ -1,3 +1,4 @@
+/* --- WORK SECTION: General Headings and Layout --- */
 /* Default Desktop Styling (your existing code) */
 
 .work-head {
@@ -53,7 +54,25 @@
   gap: 1rem;
   width: 100%;
   align-items: stretch;
+  justify-content: space-between;
 }
+
+.work-container-left,
+.work-container-middle,
+.work-container-right {
+    /* Set width to one-third of the container */
+    width: calc(33.33% - 1rem); 
+    
+    /* Flex property to ensure they share space equally and fill any gaps */
+    flex: 1 1 33.33%; 
+    
+    /* Ensure they are stacked vertically internally and stretch the column */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Keep projects evenly spaced within the column */
+    padding: 0 0.5rem; /* Reduced internal padding slightly to compensate for space */
+}
+
 
 .side-bar {
   width: 20%;
@@ -143,44 +162,6 @@
   margin-top: 0px;
 }
 
-.shibu-imgs {
-  display: flex;
-  gap: 5rem;
-  margin-top: 2rem;
-  width: 100%;
-  margin-bottom: 10rem;
-}
-
-.game-imgs {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  margin-top: 2rem;
-  width: 100%;
-  margin-bottom: 10rem;
-}
-
-.game-imgs img {
-  width: 100%;
-  height: auto;
-}
-
-.shibu-imgs img {
-  width: 40%;
-  height: auto;
-}
-
-.shibu-head {
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-  align-items: center;
-}
-
-.shibu-head img {
-  width: 30%;
-  height: auto;
-}
 
 #insights-list {
   margin-top: 2rem;
@@ -261,19 +242,17 @@
     font-size: 18px;
   }
 
-  .shibu-imgs,
-  .game-imgs {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+  .work-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-  .shibu-imgs img,
-  .shibu-head img {
-    width: 100%;
-  }
-
-  .shibu-head {
-    flex-direction: column;
-    gap: 1rem;
-  }
+    /* Make each column take 100% width when stacked */
+  .work-container-left,
+  .work-container-middle,
+  .work-container-right {
+        width: 100%; /* Take full width when stacked */
+        padding: 0;
+        flex: 1 1 100%;
+    }
 }
